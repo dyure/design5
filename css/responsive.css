@@ -621,7 +621,7 @@
     }
     .croped img {
         width: 100vw;
-        height: 50vh;
+        height: 45vh;
         object-fit: cover;
     }
     .content__body_single h2 {

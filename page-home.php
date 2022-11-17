@@ -34,6 +34,9 @@
                         <h3><?php echo get_the_title(); ?></h3>
                         <?php echo get_the_content(); ?>
                     </div>
+                    <div class="topic_name">
+                        <h3 style="color: <?php echo get_field('color_title'); ?>"><?php echo get_the_title(); ?></h3>
+                    </div>
                     <img class="da-image" src="<?php echo get_the_post_thumbnail_url($post->ID, 'large'); ?>" alt="">
                 </div>
                 <div class="no_descktop item_<?php echo $intPostCount; ?>1">

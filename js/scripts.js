@@ -41,10 +41,10 @@ jQuery(function ($) {
             }
             scrollPrev = scrolled;
             clearTimeout($.data(this, 'scrollTimer'));
-            $.data(this, 'scrollTimer', setTimeout(function(){
+            /*$.data(this, 'scrollTimer', setTimeout(function(){
                 header.removeClass('out');
                 header.removeClass('in');
-            }, 5000));
+            }, 5000));*/
         }
     });
 
@@ -68,7 +68,7 @@ jQuery(function ($) {
         $('.header').removeClass('out');
         var my_works_width_input = document.documentElement.clientWidth;
         if (my_works_width_input >= 1300) {
-            $('.header__burger,.header__burger_lines,.header__logo_phone,.header__phone,.header__menu,.content,.items_1,.items_2,.items_3,.items_4,.item_53,.overlay_topics,.overlay_posts,.anonce,.anonce__text,.anonce__add,.anonce__video,.misc_field_1,.want_design,.want_design_body,.want_design_body_title,.want_design_body_form,.input_name,.input_phone,.want_design_form_button,.articles,.footer,.footer__logo,.footer__features_menu_phone,.footer__features,.footer__menu,.footer__phone,.order_button').toggleClass('active');
+            $('.header__burger,.header__burger_lines,.header__logo_phone,.header__phone,.header__menu,.content,.croped,.items_1,.items_2,.items_3,.items_4,.item_53,.overlay_topics,.overlay_posts,.topic_name,.anonce,.anonce__text,.anonce__add,.anonce__video,.misc_field_1,.want_design,.want_design_body,.want_design_body_title,.want_design_body_form,.input_name,.input_phone,.want_design_form_button,.articles,.footer,.footer__logo,.footer__features_menu_phone,.footer__features,.footer__menu,.footer__phone,.order_button').toggleClass('active');
             $('.item_22 > .overlay_posts h3').html($('.item_22 > .overlay_posts h3').html().substring(0, 48));
             $('.item_32 > .overlay_posts h3').html($('.item_32 > .overlay_posts h3').html().substring(0, 48));
             $('.item_42 > .overlay_posts h3').html($('.item_42 > .overlay_posts h3').html().substring(0, 48));
@@ -80,7 +80,7 @@ jQuery(function ($) {
 
     // alternative method to close mobile menu
     $('.content').click(function(e) {
-        if ($('.header__menu').hasClass('active')) $('.header__burger,.header__burger_lines,.header__logo_phone,.header__phone,.header__menu,.content,.items_1,.items_2,.items_3,.items_4,.item_53,.overlay_topics,.overlay_posts,.anonce,.anonce__text,.anonce__add,.anonce__video,.misc_field_1,.want_design,.want_design_body,.want_design_body_title,.want_design_body_form,.input_name,.input_phone,.want_design_form_button,.articles,.footer,.footer__logo,.footer__features_menu_phone,.footer__features,.footer__menu,.footer__phone,.order_button').removeClass('active');
+        if ($('.header__menu').hasClass('active')) $('.header__burger,.header__burger_lines,.header__logo_phone,.header__phone,.header__menu,.content,.croped,.items_1,.items_2,.items_3,.items_4,.item_53,.overlay_topics,.overlay_posts,.topic_name,.anonce,.anonce__text,.anonce__add,.anonce__video,.misc_field_1,.want_design,.want_design_body,.want_design_body_title,.want_design_body_form,.input_name,.input_phone,.want_design_form_button,.articles,.footer,.footer__logo,.footer__features_menu_phone,.footer__features,.footer__menu,.footer__phone,.order_button').removeClass('active');
     });
 
     // to work with mobile menu
