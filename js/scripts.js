@@ -41,6 +41,7 @@ jQuery(function ($) {
             }
             scrollPrev = scrolled;
             clearTimeout($.data(this, 'scrollTimer'));
+            // the code below opens header through 5 sec
             /*$.data(this, 'scrollTimer', setTimeout(function(){
                 header.removeClass('out');
                 header.removeClass('in');
@@ -85,20 +86,28 @@ jQuery(function ($) {
 
     // to work with mobile menu
     $('#menu_order_design').click (function(event){
-        $('.header__menu_order').addClass('active');
-        if ($('.header__menu_contacts').hasClass('active')) $('.header__menu_contacts').removeClass('active');
+        if ($('.header__menu_order').css('display') == 'none') {
+            $('.header__menu_order').show('slow');
+            $('.header__menu_contacts').hide('slow');
+        } else {
+            $('.header__menu_order').hide('slow');
+        }
     });
 
     $('#menu_contacts').click (function(event){
-        $('.header__menu_contacts').addClass('active');
-        if ($('.header__menu_order').hasClass('active')) $('.header__menu_order').removeClass('active');
+        if ($('.header__menu_contacts').css('display') == 'none') {
+            $('.header__menu_contacts').show('slow');
+            $('.header__menu_order').hide('slow');
+        } else {
+            $('.header__menu_contacts').hide('slow');
+        }
     });
 
     // to open form by click on order_button
     /*$('.order_button').click (function(event){
         var target = $('.want_design').offset().top - 40;
         $('.order_button').css('display', 'none');
-        $("html, body").animate({scrollTop: target}, 800);
+        $("html, body").animate({scrollTop: target}, 800)
     });*/
 
     // to open read_more
@@ -163,85 +172,6 @@ jQuery(function ($) {
             $(this).fadeOut();					
         }
     });
-
-    // загрузка постов
-    /*$('#true_loadmore').click(function(){
-        $(this).text('Загружаю...'); // изменяем текст кнопки, вы также можете добавить прелоадер
-        var data = {
-            'action': 'loadmore',
-            'query': true_posts,
-            'page' : current_page
-        };
-        $.ajax({
-            url:ajaxurl, // обработчик
-            data:data, // данные
-            type:'POST', // тип запроса
-            success:function(data){
-                if(data) { 
-                    $('#true_loadmore').text('Ещё').before(data); // вставляем новые посты
-                    current_page++; // увеличиваем номер страницы на единицу
-                    if (current_page == max_pages) $("#true_loadmore").remove(); // если последняя страница, удаляем кнопку
-                    boxes = document.querySelectorAll('.boxes');
-                    var my_works_width = document.documentElement.clientWidth;
-                    if (my_works_width > 1024) {
-                        for(var i = 0; i < boxes.length; i++){
-                           boxes[i].onmouseenter = function (e){
-                                var x = e.pageX - this.offsetLeft;
-                                var y = e.pageY - this.offsetTop;
-                                var edge = closestEdge(x,y,this.clientWidth, this.clientHeight);
-                                var overlay = this.childNodes[1];
-                                switch(edge){
-                                    case "left":
-                                        overlay.style.top = "0%";
-                                        overlay.style.left = "-100%";
-                                        TweenMax.to(overlay, .3, {left: '0%'});
-                                    break;
-                                    case "right":
-                                        overlay.style.top = "0%";
-                                        overlay.style.left = "100%";
-                                        TweenMax.to(overlay, .3, {left: '0%'});
-                                    break;
-                                    case "top":
-                                        overlay.style.top = "-100%";
-                                        overlay.style.left = "0%";
-                                        TweenMax.to(overlay, .3, {top: '0%'});
-                                    break;
-                                    case "bottom":
-                                        overlay.style.top = "100%";
-                                        overlay.style.left = "0%";
-                                        TweenMax.to(overlay, .3, {top: '0%'});
-                                    break;
-                                }
-                            };
-                            boxes[i].onmouseleave = function(e){
-                                var x = e.pageX - this.offsetLeft;
-                                var y = e.pageY - this.offsetTop;
-                                var edge = closestEdge(x,y,this.clientWidth, this.clientHeight);
-                                var overlay = this.childNodes[1];
-                                switch(edge){
-                                    case "left":
-                                        TweenMax.to(overlay, .3, {left: '-100%'});
-                                    break;
-                                    case "right":
-                                        TweenMax.to(overlay, .3, {left: '100%'});
-                                    break;
-                                    case "top":
-                                        TweenMax.to(overlay, .3, {top: '-100%'});
-                                    break;
-                                    case "bottom":
-                                        TweenMax.to(overlay, .3, {top: '100%'});
-                                    break;
-                                }
-                            };
-                        }
-                    }
-                } else {
-                    $('#true_loadmore').remove(); // если мы дошли до последней страницы постов, скроем кнопку
-                }
-                
-            }
-        });
-    });*/
 
     boxes = document.querySelectorAll('.boxes');
     var my_works_width = document.documentElement.clientWidth;

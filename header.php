@@ -1,4 +1,8 @@
 <?php global $d5_options; ?>
+<?php
+    $arrCharsToDelete = [' ','(', ')'];
+    $strPhoneToCall = str_replace($arrCharsToDelete, '', $d5_options['d5_contacts_phone']);
+?>
 <header class="header">
     <div class="header__body">
         <div class="header__logo_phone">
@@ -8,7 +12,7 @@
                 </a>
             </div>
             <div class="header__phone">
-                <?php echo $d5_options['d5_contacts_phone']; ?>
+                <a style="color: inherit;" href="tel:<?php echo $strPhoneToCall; ?>"><?php echo $d5_options['d5_contacts_phone']; ?></a>
             </div>
         </div>
         <div class="header__burger">
@@ -48,7 +52,7 @@
                         <?php echo $d5_options['d5_misc_field_3']; ?>
                     </div>
                     <div class="header__menu_order_phone">
-                        <?php echo $d5_options['d5_contacts_phone']; ?>
+                        <a style="color: inherit;" href="tel:<?php echo $strPhoneToCall; ?>"><?php echo $d5_options['d5_contacts_phone']; ?></a>
                     </div>
                     <div class="header__menu_order_socials">
                         <div class="header__menu_order_socials_left">
@@ -83,7 +87,7 @@
                 </div>
                 <div class="header__menu_contacts">
                     <div class="header__menu_order_phone">
-                        <?php echo $d5_options['d5_contacts_phone']; ?>
+                        <a style="color: inherit;" href="tel:<?php echo $strPhoneToCall; ?>"><?php echo $d5_options['d5_contacts_phone']; ?></a>
                     </div>
                     <div class="header__menu_order_socials">
                         <div class="header__menu_order_socials_left">

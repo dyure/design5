@@ -1,5 +1,9 @@
 <?php wp_footer(); ?>
 <?php global $d5_options; ?>
+<?php
+    $arrCharsToDelete = [' ','(', ')'];
+    $strPhoneToCall = str_replace($arrCharsToDelete, '', $d5_options['d5_contacts_phone']);
+?>
 
 <div class="footer">
     <div class="footer__body">
@@ -24,7 +28,7 @@
 	        </nav>
 	        <div class="footer__phone_socials_copy">
 	            <div class="footer__phone">
-	            	<?php echo $d5_options['d5_contacts_phone']; ?>
+	            	<a style="color: inherit;" href="tel:<?php echo $strPhoneToCall; ?>"><?php echo $d5_options['d5_contacts_phone']; ?></a>
 	            </div>
 	            <div class="footer__socials">
 	            	<div class="footer__socials_vk">
