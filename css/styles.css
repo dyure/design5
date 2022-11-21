@@ -805,8 +805,7 @@ ul {
 .items_4 .item_64,
 .alm-reveal .item_64 {
     grid-area: item_64;
-    overflow: hidden;
-    position: relative;
+    overflow: hidden;    position: relative;
 }
 .alm-btn-wrap {
     visibility: hidden!important;
@@ -825,7 +824,7 @@ ul {
     z-index: 3;
 }
 .overlay_posts {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 5%, rgba(250, 250, 250, 0.1) 50%);
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
     cursor: pointer;
 }
 .overlay_topics h3,
