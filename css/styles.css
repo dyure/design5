@@ -285,11 +285,13 @@ ul {
     border: 0;
     padding-top: 13px;
     padding-right: 2px;
-    border: 1px solid #ffffff;
-    border-radius: 50%;
     position: fixed;
     top: calc(22px + (24 - 22) * ((100vw - 1300px) / (1920 - 1300)));
     right: calc(40px + (60 - 40) * ((100vw - 1300px) / (1920 - 1300)));
+}
+.header__burger.active:hover {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
 }
 /* линии бургера */
 .header__burger_lines {
@@ -362,7 +364,7 @@ ul {
 .header__menu_menu {
     display: flex;
     justify-content: start;
-    margin-bottom: calc(60px + (70 - 60) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-bottom: calc(50px + (70 - 50) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .menu_left,
 .menu_right {
@@ -377,6 +379,12 @@ ul {
     font-size: 16px;
     line-height: 30px;
     margin-bottom: calc(17px + (20 - 17) * ((100vw - 1300px) / (1920 - 1300)));
+    padding-bottom: 2px;
+    border-bottom: 1px solid #78777e;
+    transition: 1000ms;
+}
+.menu_left_list li:hover,
+.menu_right_list li:hover {
     border-bottom: 1px solid #f4f5f4;
 }
 .menu_link {
@@ -407,6 +415,7 @@ ul {
 .header__menu_order a p,
 .header__menu_contacts a p {
     color: #ffffff!important;
+    font-weight: 400;
 }
 .header__menu_order_text h3 {
     font-weight: 600;
@@ -418,7 +427,7 @@ ul {
     font-weight: 500;
     font-size: calc(14px + (16 - 14) * ((100vw - 1300px) / (1920 - 1300)));
     line-height: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
-    margin-bottom: 40px;
+    margin-bottom: 23px;
 }
 .header__menu_order_phone {
     font-size: calc(20px + (35 - 20) * ((100vw - 1300px) / (1920 - 1300)));

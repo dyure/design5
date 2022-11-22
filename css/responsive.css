@@ -62,6 +62,9 @@
         top: calc(10px + (22 - 10) * ((100vw - 700px) / (1299 - 700)));
         right: calc(40px + (60 - 40) * ((100vw - 700px) / (1299 - 700)));
     }
+    .header__burger.active:hover {
+        border: none;
+    }
     .header__burger_lines {
         width: calc(32px + (34 - 32) * ((100vw - 700px) / (1299 - 700)));
         height: 16px;
@@ -131,7 +134,7 @@
         margin-bottom: calc(20px + (25 - 20) * ((100vw - 700px) / (1299 - 700)));
     }
     .header__menu_order_text p {
-        margin-bottom: calc(55px + (40 - 55) * ((100vw - 700px) / (1299 - 700)));
+        margin-bottom: calc(22px + (30 - 22) * ((100vw - 700px) / (1299 - 700)));
     }
     .header__menu_order_phone {
         font-size: 35px;

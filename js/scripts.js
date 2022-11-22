@@ -86,21 +86,15 @@ jQuery(function ($) {
 
     // to work with mobile menu
     $('#menu_order_design').click (function(event){
-        if ($('.header__menu_order').css('display') == 'none') {
-            $('.header__menu_order').show('slow');
-            $('.header__menu_contacts').hide('slow');
-        } else {
-            $('.header__menu_order').hide('slow');
-        }
+        $('.header__menu_order').slideUp('slow');
+        $('.header__menu_order').slideDown('slow');
+        $('.header__menu_contacts').slideUp('slow');
     });
 
     $('#menu_contacts').click (function(event){
-        if ($('.header__menu_contacts').css('display') == 'none') {
-            $('.header__menu_contacts').show('slow');
-            $('.header__menu_order').hide('slow');
-        } else {
-            $('.header__menu_contacts').hide('slow');
-        }
+        $('.header__menu_contacts').slideUp('slow');
+        $('.header__menu_contacts').slideDown('slow');
+        $('.header__menu_order').slideUp('slow');
     });
 
     // to open form by click on order_button
