@@ -105,7 +105,7 @@
         padding-right: 0;
     }
     .header__menu_menu {
-        margin-bottom: 70px;
+        margin-bottom: 60px;
     }
     .menu_left,
     .menu_right {
@@ -537,7 +537,7 @@
         padding-left: calc(10px + (40 - 10) * ((100vw - 320px) / (699 - 320)));
     }
     .header__menu_menu {
-        margin-bottom: calc(40px + (70 - 40) * ((100vw - 320px) / (699 - 320)));
+        margin-bottom: calc(40px + (60 - 40) * ((100vw - 320px) / (699 - 320)));
         flex-direction: column;
     }
     .menu_left,
@@ -569,11 +569,11 @@
     .header__menu_order_text p {
         font-size: 14px;
         line-height: 20px;
-        margin-bottom: calc(35px + (40 - 35) * ((100vw - 320px) / (699 - 320)));
+        margin-bottom: calc(20px + (30 - 20) * ((100vw - 320px) / (699 - 320)));
     }
     .header__menu_order_phone {
-        font-size: calc(20px + (35 - 30) * ((100vw - 320px) / (699 - 320)));
-        line-height: calc(20px + (45 - 30) * ((100vw - 320px) / (699 - 320)));
+        font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (699 - 320)));
+        line-height: calc(30px + (45 - 30) * ((100vw - 320px) / (699 - 320)));
         margin-bottom: calc(25px + (30 - 25) * ((100vw - 320px) / (699 - 320)));
     }
     .header__menu_order_socials {

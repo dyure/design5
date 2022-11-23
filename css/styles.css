@@ -202,11 +202,22 @@ ul {
     transform: translateX(-100px) rotate(134deg);
     animation: flash_button 5s .2s infinite;
 }
+.order_button:hover:after {
+    animation: flash_button_hover 2s infinite;
+}
 @keyframes flash_button {
     0% {
         left: -100px;
     }
     50%,
+    100% {
+        left: 150%;
+    }
+}
+@keyframes flash_button_hover {
+    0% {
+        left: -100px;
+    }
     100% {
         left: 150%;
     }
@@ -316,6 +327,17 @@ ul {
     border-bottom: calc(5px + (6 - 5) * ((100vw - 1300px) / (1920 - 1300))) solid #29272f;
     transition: 1000ms;
 }
+
+/* поведение линий бургера при наведении мыши 
+.header__burger:hover .header__burger_lines:before {
+    width: calc(28px + (35 - 28) * ((100vw - 1300px) / (1920 - 1300)));
+    left: 4px;
+}
+.header__burger:hover .header__burger_lines:after {
+    width: calc(34px + (41 - 34) * ((100vw - 1300px) / (1920 - 1300)));
+    left: 0;
+}*/
+
 /* поведение линий бургера при наведении мыши после нажатия */
 .header__burger:hover .header__burger_lines.active:before {
     width: calc(34px + (41 - 34) * ((100vw - 1300px) / (1920 - 1300)));
@@ -452,6 +474,12 @@ ul {
 .header__menu_order_socials_whatsapp a,
 .header__menu_order_socials_email a {
     display: flex;
+}
+.header__menu_order_socials_vk a p:hover,
+.header__menu_order_socials_telegram a p:hover,
+.header__menu_order_socials_whatsapp a p:hover,
+.header__menu_order_socials_email a p:hover {
+    text-decoration: underline;
 }
 .header__menu_order_socials_vk img,
 .header__menu_order_socials_telegram img,
@@ -1371,11 +1399,17 @@ ul {
 .footer__phone.active {
     font-size: 15px;
 }
-.footer__socials{
+.footer__socials {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 30px;
+}
+#footer_vk:hover,
+#footer_telegram:hover,
+#footer_whatsapp:hover,
+#footer_email:hover {
+  fill: #29272f;
 }
 .footer__copy {
     font-weight: 500;
