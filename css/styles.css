@@ -203,7 +203,7 @@ ul {
     animation: flash_button 5s .2s infinite;
 }
 .order_button:hover:after {
-    animation: flash_button_hover 2s infinite;
+    animation: flash_button_hover 2s 0s infinite;
 }
 @keyframes flash_button {
     0% {
@@ -300,6 +300,9 @@ ul {
     top: calc(22px + (24 - 22) * ((100vw - 1300px) / (1920 - 1300)));
     right: calc(40px + (60 - 40) * ((100vw - 1300px) / (1920 - 1300)));
 }
+.header__burger:hover {
+    border: 1px solid #dcdcdc;
+}
 .header__burger.active:hover {
     border: 1px solid #ffffff;
     border-radius: 50%;
@@ -327,16 +330,6 @@ ul {
     border-bottom: calc(5px + (6 - 5) * ((100vw - 1300px) / (1920 - 1300))) solid #29272f;
     transition: 1000ms;
 }
-
-/* поведение линий бургера при наведении мыши 
-.header__burger:hover .header__burger_lines:before {
-    width: calc(28px + (35 - 28) * ((100vw - 1300px) / (1920 - 1300)));
-    left: 4px;
-}
-.header__burger:hover .header__burger_lines:after {
-    width: calc(34px + (41 - 34) * ((100vw - 1300px) / (1920 - 1300)));
-    left: 0;
-}*/
 
 /* поведение линий бургера при наведении мыши после нажатия */
 .header__burger:hover .header__burger_lines.active:before {

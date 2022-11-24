@@ -41,11 +41,11 @@ jQuery(function ($) {
             }
             scrollPrev = scrolled;
             clearTimeout($.data(this, 'scrollTimer'));
-            // the code below opens header through 5 sec
-            /*$.data(this, 'scrollTimer', setTimeout(function(){
-                header.removeClass('out');
+            // the code below opens header through 2 sec
+            $.data(this, 'scrollTimer', setTimeout(function(){
+                /*header.removeClass('out');*/
                 header.removeClass('in');
-            }, 5000));*/
+            }, 2000));
         }
     });
 
