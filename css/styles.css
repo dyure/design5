@@ -234,6 +234,8 @@ ul {
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
 }
 .header {
+    display: flex;
+    justify-content: center;
     padding: 0 calc(40px + (60 - 40) * ((100vw - 1300px) / (1920 - 1300)));
     position: fixed;
     top: 0;
@@ -248,6 +250,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     height: calc(98px + (116 - 98) * ((100vw - 1300px) / (1920 - 1300)));
+    width: 100%;
     max-width: 1920px;
 }
 .header__logo_phone {
@@ -277,6 +280,7 @@ ul {
 }
 .header__phone.active {
     margin-right: calc(40px + (60 - 40) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-top: 0;
 }
 
 /* внешний контейнер бургера */
@@ -491,21 +495,38 @@ ul {
     justify-content: center;
     padding: 0 calc(40px + (60 - 40) * ((100vw - 1300px) / (1920 - 1300)));
     margin-top: calc(98px + (116 - 98) * ((100vw - 1300px) / (1920 - 1300)));
-    max-width: 1920px; /*calc(1222px + (1800 - 1222) * ((100vw - 1300px) / (1920 - 1300)));*/
+    /*max-width: 1920px; calc(1222px + (1800 - 1222) * ((100vw - 1300px) / (1920 - 1300)));*/
     width: 100%;
     transition: 1000ms;
 }
+.content__body {
+    width: 100%;
+    max-width: 1920px;
+}
 .content.active {
     width: calc(706px + (1140 - 706) * ((100vw - 1300px) / (1920 - 1300)));
+}
+@media screen and (min-width: 2000px) {
+    .content.active {
+        width: calc(1167px + (1556 - 1167) * ((100vw - 1920px) / (3700 - 1920)));
+    }
+    .anonce__text h2,
+    .misc_field_1 h2 {
+        font-weight: 600!important;
+        font-size: 50px!important;
+        line-height: 65px!important;
+        letter-spacing: 0.01em!important;
+        margin-bottom: 30px!important;
+    }
+    .anonce__video {
+        width: 587px!important;
+    }
+
 }
 .croped.active img {
     width: 100vw;
     height: 114vh;
     object-fit: cover;
-}
-.content__body {
-    width: 100%;
-    max-width: 1920px;
 }
 .content__body_title {
     margin-top: 20px;
@@ -854,7 +875,7 @@ ul {
     z-index: 3;
 }
 .overlay_posts {
-    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
     cursor: pointer;
 }
 .overlay_topics h3,
@@ -1402,7 +1423,7 @@ ul {
 #footer_telegram:hover,
 #footer_whatsapp:hover,
 #footer_email:hover {
-  fill: #29272f;
+  fill: #78777e;
 }
 .footer__copy {
     font-weight: 500;

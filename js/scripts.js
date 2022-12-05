@@ -28,7 +28,7 @@ jQuery(function ($) {
         }
     }
 
-    //to add .out and .in classes when you are scrolling up and remove them if you are don't in during 5 sec
+    //to add .out and .in classes when you are scrolling up and remove them if you are don't in during 2 sec
     var header = $('.header'), scrollPrev = 0;
     $(window).scroll(function(){
         if (!$('.header__burger').hasClass('active')) {
@@ -68,14 +68,20 @@ jQuery(function ($) {
     $('.header__burger,.order_button,#footer__lists_contacts').click (function(event){
         $('.header').removeClass('out');
         var my_works_width_input = document.documentElement.clientWidth;
+        var new_margin_left = (my_works_width_input - 1920) / 2;
         if (my_works_width_input >= 1300) {
             $('.header__burger,.header__burger_lines,.header__logo_phone,.header__phone,.header__menu,.content,.croped,.items_1,.items_2,.items_3,.items_4,.item_53,.overlay_topics,.overlay_posts,.topic_name,.anonce,.anonce__text,.anonce__add,.anonce__video,.misc_field_1,.want_design,.want_design_body,.want_design_body_title,.want_design_body_form,.input_name,.input_phone,.want_design_form_button,.articles,.footer,.footer__logo,.footer__features_menu_phone,.footer__features,.footer__menu,.footer__phone,.order_button').toggleClass('active');
-            $('.item_22 > .overlay_posts h3').html($('.item_22 > .overlay_posts h3').html().substring(0, 48));
-            $('.item_32 > .overlay_posts h3').html($('.item_32 > .overlay_posts h3').html().substring(0, 48));
-            $('.item_42 > .overlay_posts h3').html($('.item_42 > .overlay_posts h3').html().substring(0, 48));
-            $('.item_52 > .overlay_posts h3').html($('.item_52 > .overlay_posts h3').html().substring(0, 48));
         } else {
             $('.header__burger,.header__burger_lines,.header__menu').toggleClass('active');
+        }
+        if (my_works_width_input > 1920) {
+            if ($('.content').hasClass('active')) {
+                $('.content').css('margin-left',new_margin_left + 'px');
+                $('.content').css('padding-left','0');
+            } else {
+                $('.content').css('margin-left','0');
+                $('.content').css('padding-left','60px');
+            }
         }
     });
 
