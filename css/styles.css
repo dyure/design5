@@ -507,8 +507,11 @@ ul {
     width: calc(706px + (1140 - 706) * ((100vw - 1300px) / (1920 - 1300)));
 }
 @media screen and (min-width: 2000px) {
+    .header__menu.active {
+        width: 780px;
+    }
     .content.active {
-        width: calc(1167px + (1556 - 1167) * ((100vw - 1920px) / (3700 - 1920)));
+        width: 1200px;
     }
     .anonce__text h2,
     .misc_field_1 h2 {
