@@ -506,26 +506,6 @@ ul {
 .content.active {
     width: calc(706px + (1140 - 706) * ((100vw - 1300px) / (1920 - 1300)));
 }
-@media screen and (min-width: 2000px) {
-    .header__menu.active {
-        width: 780px;
-    }
-    .content.active {
-        width: 1200px;
-    }
-    .anonce__text h2,
-    .misc_field_1 h2 {
-        font-weight: 600!important;
-        font-size: 50px!important;
-        line-height: 65px!important;
-        letter-spacing: 0.01em!important;
-        margin-bottom: 30px!important;
-    }
-    .anonce__video {
-        width: 587px!important;
-    }
-
-}
 .croped.active img {
     width: 100vw;
     height: 114vh;

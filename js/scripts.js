@@ -76,15 +76,13 @@ jQuery(function ($) {
         }
         if (my_works_width_input > 1920) {
             if ($('.content').hasClass('active')) {
-                $('.header__burger').css('padding-right','800px');
-                $('.header__menu').css('margin-right',new_margin + 'px');
-                $('.header__menu').css('padding-right','0');
+                $('.header__burger').css('margin-right',new_margin - 110 + 'px');
+                $('.header__menu').css('margin-right',new_margin - 40 + 'px');
                 $('.content').css('margin-left',new_margin + 'px');
                 $('.content').css('padding-left','0');
             } else {
-                $('.header__burger').css('padding-right','60px');
+                $('.header__burger').css('margin-right','0');
                 $('.header__menu').css('margin-right','0');
-                $('.header__menu').css('padding-right','60px');
                 $('.content').css('margin-left','0');
                 $('.content').css('padding-left','60px');
             }

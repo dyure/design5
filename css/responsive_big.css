@@ -1,0 +1,70 @@
+@media screen and (min-width: 2000px) {
+    .header__logo_phone.active {
+        width: 65%;
+    }
+    .header__menu_body {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .header__menu.active {
+        width: 760px;
+    }
+    .header__menu_order {
+        width: 630px;
+    }
+    .header__menu_order_phone {
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 28px;
+    }
+    .header__menu_order_text p {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 28px;
+    }
+    .content.active {
+        width: 1280px;
+    }
+    .anonce.active {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+    .anonce__text h2,
+    .misc_field_1 h2 {
+        font-weight: 600!important;
+        font-size: 50px!important;
+        line-height: 65px!important;
+        letter-spacing: 0.01em!important;
+        margin-bottom: 30px!important;
+    }
+    .anonce__text.active h2,
+    .misc_field_1.active h2 {
+        font-size: 35px!important;
+        line-height: 45px!important;
+        margin-bottom: 30px!important;
+    }
+    .anonce__video {
+        width: 587px!important;
+    }
+    .anonce__add.active,
+    .misc_field_1.active {
+        width: 1020px;
+    }
+    .content__body p {
+        margin: 80px 0;
+    }
+    .items_1.active,
+    .items_2.active,
+    .items_3.active,
+    .items_4.active {
+        grid-gap: 28px;
+        row-gap: 23px;
+        margin-top: 0;
+        margin-bottom: 110px;
+    }
+    .topic_name.active h3,
+    .item_31 .topic_name.active h3,
+    .item_41 .topic_name.active h3 {
+        margin: 40px 20px 15px 40px;
+    }
+}

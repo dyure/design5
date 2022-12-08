@@ -11,6 +11,7 @@
         wp_enqueue_style('theme', get_stylesheet_uri());
         wp_enqueue_style('main', D5_CSS_DIR . '/styles.css');
         wp_enqueue_style('responsive', D5_CSS_DIR . '/responsive.css');
+        wp_enqueue_style('responsive_big', D5_CSS_DIR . '/responsive_big.css');
         //wp_enqueue_style('owl_css', D5_CSS_DIR . '/owl.carousel.min.css');
         //wp_enqueue_style('owl_theme_css', D5_CSS_DIR . '/owl.theme.default.min.css');
 
