@@ -13,7 +13,17 @@
 
 <div class="content">
     <div class="content__body">
-        <?php the_content(); ?>
+        <div class="anonce">
+            <div class="anonce__text">
+                <?php the_content(); ?>
+            </div>
+            <div class="anonce__video">
+                <video autoplay="" loop="" muted="" src="https://blacksea.dm1tr11.ru/wp-content/uploads/2022/06/adobe98.mp4" playsinline=""></video>
+            </div>
+        </div>
+        <div class="anonce__add">
+            <?php echo $d5_options['d5_misc_field_4']; ?>
+        </div>
         <div class="items">
 <?php
     $args = array('post_type' => 'topics', 'posts_per_page' => 6);

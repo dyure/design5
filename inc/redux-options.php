@@ -506,6 +506,16 @@ Redux::set_section(
 			        'textarea_rows'    => 10
 			    ),
    			),
+			array(
+				'id'           => 'd5_misc_field_4',
+				'type'         => 'editor',
+				'title'        => esc_html__( 'Field 4', 'd5_template' ),
+				'subtitle'     => esc_html__( 'Type any information here', 'd5_template' ),
+			    'args'   => array(
+			        'teeny'            => false,
+			        'textarea_rows'    => 10
+			    ),
+   			),
 		),
 	)
 );
