@@ -261,7 +261,7 @@ ul {
     transition: 1000ms;
 }
 .header__logo_phone.active {
-    width: 54%;
+    width: 57%;
 }
 .header__logo {
     width: calc(78px + (96 - 78) * ((100vw - 1300px) / (1920 - 1300)));
@@ -279,7 +279,7 @@ ul {
     transition: 1000ms;
 }
 .header__phone.active {
-    margin-right: calc(40px + (60 - 40) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-right: 0;
     margin-top: 0;
 }
 
@@ -640,6 +640,10 @@ ul {
 .anonce__video video {
     width: calc(393px + (587 - 393) * ((100vw - 1300px) / (1920 - 1300)));
     height: auto;
+}
+.anonce__video.active video {
+    width: calc(252px + (393 - 252) * ((100vw - 1300px) / (1920 - 1300)));
+    height: calc(252px + (393 - 252) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .read_more {
     display: none;

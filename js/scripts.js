@@ -64,15 +64,13 @@ jQuery(function ($) {
         }
     });
 
-    /*$(window).load(function(){
-        var my_works_width_input = document.documentElement.clientWidth;
-        var new_margin = (my_works_width_input - 1920) / 2;
-        if (my_works_width_input > 1920) {
-            $('.order_button').css('margin-right',new_margin - 80 + 'px');
-        } else {
-            $('.order_button').css('margin-right','-20px');
-        }
-    });
+    var my_works_width_input = document.documentElement.clientWidth;
+    var new_margin = (my_works_width_input - 1920) / 2;
+    if (my_works_width_input > 1920) {
+        $('.order_button').css('margin-right',new_margin - 80 + 'px');
+    } else {
+        $('.order_button').css('margin-right','0');
+    }
     
     $(window).resize(function(){
         var my_works_width_input = document.documentElement.clientWidth;
@@ -80,9 +78,9 @@ jQuery(function ($) {
         if (my_works_width_input > 1920) {
             $('.order_button').css('margin-right',new_margin - 80 + 'px');
         } else {
-            $('.order_button').css('margin-right','-20px');
+            $('.order_button').css('margin-right','0');
         }
-    });*/
+    });
 
     // to open mobile menu
     $('.header__burger,.order_button,#footer__lists_contacts').click (function(event){

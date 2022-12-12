@@ -166,6 +166,7 @@
     }
     .anonce {
         display: flex;
+        justify-content: unset;
         align-items: center;
         width: 100%;
         flex-direction: column-reverse;
@@ -186,7 +187,14 @@
         margin-bottom: calc(30px + (70 - 30) * ((100vw - 700px) / (1299 - 700)));
     }
     .anonce__video {
+        display: flex;
+        justify-content: center;
+        margin-right: 0;
         width: calc(473px + (690 - 473) * ((100vw - 700px) / (1299 - 700)));
+    }
+    .anonce__video video {
+        width: calc(473px + (690 - 473) * ((100vw - 700px) / (1299 - 700)));
+        height: auto;
     }
     .content__body_title {
         margin-bottom: 20px;
@@ -344,7 +352,7 @@
     .want_design_form .input_phone {
         margin-left: 50px;
         margin-bottom: 40px;
-        width: 470px;
+        width: calc(470px + (753 - 470) * ((100vw - 700px) / (1299 - 700)));
         height: 52px;
         font-size: 20px;
         line-height: 30px;
@@ -440,8 +448,14 @@
     }
     .footer__features_menu_phone {
         width: 100%;
-        justify-content: space-between;
+        justify-content: unset;
         margin-right: 0;
+    }
+    .footer__features {
+        margin-right: calc(37px + (132 - 37) * ((100vw - 700px) / (1299 - 700)));
+    }
+    .footer__menu {
+        margin-right: calc(54px + (128 - 54) * ((100vw - 700px) / (1299 - 700)));
     }
     .footer__lists li {
         font-size: calc(14px + (16 - 14) * ((100vw - 700px) / (1299 - 700)));
@@ -451,10 +465,10 @@
         margin-top: 0;
         font-size: calc(16px + (20 - 16) * ((100vw - 700px) / (1299 - 700)));
         line-height: calc(25px + (30 - 25) * ((100vw - 700px) / (1299 - 700)));
-        margin-bottom: calc(37px + (30 - 37) * ((100vw - 700px) / (1299 - 700)));
+        margin-bottom: calc(26px + (35 - 26) * ((100vw - 700px) / (1299 - 700)));
     }
     .footer__socials{
-        margin-bottom: 30px;
+        margin-bottom: calc(17px + (35 - 17) * ((100vw - 700px) / (1299 - 700)));
     }
 }
 
@@ -608,6 +622,10 @@
     }
     .anonce__video {
         width: calc(300px + (619 - 300) * ((100vw - 320px) / (699 - 320)));
+    }
+    .anonce__video video {
+        width: calc(300px + (619 - 300) * ((100vw - 320px) / (699 - 320)));
+        height: auto;
     }
     .content__body_title {
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (699 - 320)));
