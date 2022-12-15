@@ -522,9 +522,12 @@ ul {
     max-width: 1920px;
     display: flex;
     overflow-y: hidden;
-    overflow-x: auto;
+    overflow-x: scroll;
     flex-wrap: nowrap;
     margin-bottom: 40px;
+    /*to hide scrollbar for firefox
+    scrollbar-color: #ffffff #ffffff;
+    scrollbar-width: thin;*/
 }
 .content__body_categories::-webkit-scrollbar {
     display: none;
@@ -1366,6 +1369,9 @@ ul {
 }
 .footer__lists li a:hover {
     text-decoration: underline;
+}
+.footer__lists .current-cat {
+    font-weight: 600;
 }
 #footer__lists_contacts {
     cursor: pointer;

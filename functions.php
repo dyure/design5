@@ -23,6 +23,8 @@
         wp_enqueue_script('inputmask');
         wp_register_script('validate', D5_JS_DIR . '/jquery.validate.min.js');
         wp_enqueue_script('validate');
+        wp_register_script('dragscroll', D5_JS_DIR . '/dragscroll.js');
+        wp_enqueue_script('dragscroll');
         wp_register_script('my_jquery_scripts', D5_JS_DIR . '/scripts.js');
         wp_enqueue_script('my_jquery_scripts');
         // wp_register_script('owl_scripts', D5_JS_DIR . '/owl.carousel.js');
@@ -48,6 +50,14 @@
             );
         }*/
     });
+
+    // to remove link from current category
+    function current_category_no_link($no_link) {
+        $in_link = '!<li(.*?)class="(.*?)current-cat(.*?)"><a(.*?)>(.*?)</a>!si';
+        $out_link = '<li$1class="\\2current-cat\\3">$5';
+        return preg_replace($in_link, $out_link, $no_link );
+    }
+    add_filter('wp_list_categories', 'current_category_no_link');
 
     // to add new posttype
     /*function wpschool_create_chosenone_posttype() {

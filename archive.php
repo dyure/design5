@@ -24,7 +24,7 @@
 <div class="content">
     <div class="content__body">
         <h2 class="content__body_title"><?php echo $cat_name; ?></h2>
-        <ul class="content__body_categories">
+        <ul class="content__body_categories dragscroll">
             <li><a href="<?php echo get_home_url(); ?>/projects/">Все</a></li>
             <?php wp_list_categories('exclude=' . $cat_id . '&title_li='); ?>
         </ul>

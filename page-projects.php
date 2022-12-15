@@ -14,7 +14,7 @@
 <div class="content">
     <div class="content__body">
         <h2 class="content__body_title">Проекты</h2>
-        <ul class="content__body_categories">
+        <ul class="content__body_categories dragscroll">
             <?php wp_list_categories('title_li='); ?>
         </ul>
         <div class="items">
