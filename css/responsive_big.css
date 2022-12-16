@@ -443,8 +443,8 @@
     }
     .articles_desc h3 {
         margin: 20px 20px 0 25px;
-        font-size: calc(14px + (20 - 14) * ((100vw - 1300px) / (1920 - 1300)));
-        line-height: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
+        font-size: 20px;
+        line-height: 30px;
     }
     .articles_desc p {
         margin-left: 25px;
