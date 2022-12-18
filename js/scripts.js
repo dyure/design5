@@ -64,17 +64,19 @@ jQuery(function ($) {
         }
     });
 
+    // order button position in case when screen bigger than 1920px
     var my_works_width_input = document.documentElement.clientWidth;
-    var new_margin = (my_works_width_input - 1920) / 2;
+    var new_margin = (my_works_width_input - 1800) / 2;
     if (my_works_width_input > 1920) {
         $('.order_button').css('margin-right',new_margin - 80 + 'px');
     } else {
         $('.order_button').css('margin-right','0');
     }
     
+    // order button position in case when screen bigger than 1920px and after resize the window
     $(window).resize(function(){
         var my_works_width_input = document.documentElement.clientWidth;
-        var new_margin = (my_works_width_input - 1920) / 2;
+        var new_margin = (my_works_width_input - 1800) / 2;
         if (my_works_width_input > 1920) {
             $('.order_button').css('margin-right',new_margin - 80 + 'px');
         } else {
@@ -114,16 +116,16 @@ jQuery(function ($) {
     });
 
     // to work with mobile menu
-    $('#menu_order_design').click (function(event){
-        $('.header__menu_order').slideUp('slow');
-        $('.header__menu_order').slideDown('slow');
-        $('.header__menu_contacts').slideUp('slow');
+    $('#menu_order_design').click(function(event){
+        $('.header__menu_order').slideUp(500);
+        $('.header__menu_order').slideDown(500);
+        $('.header__menu_contacts').slideUp(500);
     });
 
-    $('#menu_contacts').click (function(event){
-        $('.header__menu_contacts').slideUp('slow');
-        $('.header__menu_contacts').slideDown('slow');
-        $('.header__menu_order').slideUp('slow');
+    $('#menu_contacts').click(function(event){
+        $('.header__menu_contacts').slideUp(500);
+        $('.header__menu_contacts').slideDown(500);
+        $('.header__menu_order').slideUp(500);
     });
 
     // to open form by click on order_button

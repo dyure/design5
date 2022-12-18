@@ -109,7 +109,8 @@
         padding-right: 0;
     }
     .header__menu_menu {
-        margin-bottom: 60px;
+        margin-top: -43px;
+        margin-bottom: 40px;
     }
     .menu_left,
     .menu_right {
@@ -135,10 +136,14 @@
     .header__menu_order_text h3 {
         font-size: calc(16px + (20 - 16) * ((100vw - 700px) / (1299 - 700)));
         line-height: calc(25px + (30 - 25) * ((100vw - 700px) / (1299 - 700)));
-        margin-bottom: calc(20px + (25 - 20) * ((100vw - 700px) / (1299 - 700)));
+        margin-bottom: calc(20px + (22 - 20) * ((100vw - 700px) / (1299 - 700)));
     }
     .header__menu_order_text p {
-        margin-bottom: calc(22px + (30 - 22) * ((100vw - 700px) / (1299 - 700)));
+        font-size: calc(14px + (16 - 14) * ((100vw - 700px) / (1299 - 700)));
+        line-height: calc(20px + (30 - 20) * ((100vw - 700px) / (1299 - 700)));
+    }
+    .header__menu_order .header__menu_order_phone {
+        margin-top: 55px;
     }
     .header__menu_order_phone {
         font-size: 35px;
@@ -576,6 +581,7 @@
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (699 - 320)));
         line-height: calc(20px + (30 - 20) * ((100vw - 320px) / (699 - 320)));
         margin-bottom: calc(30px + (22 - 30) * ((100vw - 320px) / (699 - 320)));
+        padding-bottom: 20px;
     }
     .menu_features_list li {
         font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (699 - 320)));
@@ -593,7 +599,7 @@
     .header__menu_order_text p {
         font-size: 14px;
         line-height: 20px;
-        margin-bottom: calc(20px + (30 - 20) * ((100vw - 320px) / (699 - 320)));
+        margin-bottom: 20px;
     }
     .header__menu_order_phone {
         font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (699 - 320)));

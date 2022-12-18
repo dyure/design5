@@ -12,6 +12,7 @@
 */
     .header__body {
         height: 116px;
+        max-width: 1800px;
     }
     .header__logo {
         width: 96px;
@@ -108,6 +109,9 @@
     .content {
         margin-top: 116px;
         padding: 0;
+    }
+    .content__body {
+        max-width: 1800px;
     }
     .content.active {
         width: 1140px;
@@ -368,6 +372,9 @@
         width: 1140px;
         height: 700px;
     }
+    .want_design_body {
+        max-width: 1800px;
+    }
     .want_design_body.active {
         padding-left: 90px;
     }
@@ -430,6 +437,9 @@
     .articles.active {
         width: 1140px;
     }
+    .articles_body {
+        max-width: 1800px;
+    }
     .articles_body_item {
         width: 480px;
         height: 480px;
@@ -472,6 +482,7 @@
     }
     .footer__body {
         margin-bottom: 140px;
+        max-width: 1800px;
     }
     .footer__logo {
         margin-right: 210px;

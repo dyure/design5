@@ -24,29 +24,16 @@
                     <div class="menu_left">
                         <ul class="menu_left_list">
                             <li><a class="menu_link" href="<?php echo get_home_url(); ?>/projects/">Проекты</a></li>
-                            <!--li><a class="menu_link" href="">Услуги</a></li-->
                             <li id="menu_order_design">Заказать Дизайн5</li>
                         </ul>
                     </div>
                     <div class="menu_right">
                         <ul class="menu_right_list">
                             <li><a class="menu_link" href="<?php echo get_home_url(); ?>/about_us/">О нас</a></li>
-                            <!--li><a class="menu_link" href="">Статьи</a></li-->
                             <li id="menu_contacts">Контакты</li>
                         </ul>
                     </div>
                 </div>
-                <!--div class="header__menu_features">
-                    <ul class="menu_features_list">
-                        <li>Фирменный стиль</li>
-                        <li>Дизайн упаковки</li>
-                        <li>Разработка логотипов</li>
-                        <li>Регистрация ТЗ</li>
-                        <li>Создание сайта</li>
-                        <li>SEO оптимизация</li>
-                        <li>Копирайтинг</li>
-                    </ul>
-                </div-->
                 <div class="header__menu_order">
                     <div class="header__menu_order_text">
                         <?php echo $d5_options['d5_misc_field_3']; ?>
