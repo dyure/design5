@@ -548,6 +548,10 @@ ul {
 .content__body_categories li.current-cat {
     border: 2px solid #78777e;
 }
+.content__body_categories li.empty {
+    border: none;
+    color: #ffffff;
+}
 .content__body_categories li:last-child {
     margin-right: 0;
 }
@@ -560,6 +564,9 @@ ul {
 @media (hover: hover) {
     .content__body_categories li:hover {
         border: 2px solid #78777e;
+    }
+    .content__body_categories li.empty:hover {
+        border: none;
     }
 }
 

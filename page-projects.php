@@ -16,6 +16,7 @@
         <h2 class="content__body_title">Проекты</h2>
         <ul class="content__body_categories dragscroll">
             <?php wp_list_categories('title_li='); ?>
+            <li class="empty">verylongstringtoimitateemptyspace</li>
         </ul>
         <div class="items">
             <?php echo do_shortcode('[ajax_load_more posts_per_page="6" container_type="div" post_type="post" scroll="true"]'); ?>
