@@ -109,8 +109,8 @@
         padding-right: 0;
     }
     .header__menu_menu {
-        margin-top: -43px;
-        margin-bottom: 40px;
+        /*margin-top: calc(23px + (43 - 23) * ((100vw - 700px) / (1299 - 700)) * (1 - 2));*/
+        margin-bottom: calc(20px + (40 - 20) * ((100vw - 700px) / (1299 - 700)));
     }
     .menu_left,
     .menu_right {
@@ -566,7 +566,8 @@
         padding-left: calc(10px + (40 - 10) * ((100vw - 320px) / (699 - 320)));
     }
     .header__menu_menu {
-        margin-bottom: calc(40px + (60 - 40) * ((100vw - 320px) / (699 - 320)));
+        margin-top: 0;
+        margin-bottom: calc(10px + (38 - 10) * ((100vw - 320px) / (699 - 320)));
         flex-direction: column;
     }
     .menu_left,
@@ -580,7 +581,7 @@
     .menu_right_list li {
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (699 - 320)));
         line-height: calc(20px + (30 - 20) * ((100vw - 320px) / (699 - 320)));
-        margin-bottom: calc(30px + (22 - 30) * ((100vw - 320px) / (699 - 320)));
+        /*margin-bottom: calc(30px + (22 - 30) * ((100vw - 320px) / (699 - 320)));*/
         padding-bottom: 20px;
     }
     .menu_features_list li {
@@ -594,17 +595,20 @@
     .header__menu_order_text h3 {
         font-size: 16px;
         line-height: 25px;
-        margin-bottom: calc(15px + (20 - 15) * ((100vw - 320px) / (699 - 320)));
+        margin-bottom: calc(12px + (17 - 12) * ((100vw - 320px) / (699 - 320)));
     }
     .header__menu_order_text p {
         font-size: 14px;
         line-height: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 17px;
+    }
+    .header__menu_order .header__menu_order_phone {
+        margin-top: calc(35px + (40 - 35) * ((100vw - 320px) / (699 - 320)));
     }
     .header__menu_order_phone {
         font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (699 - 320)));
         line-height: calc(30px + (45 - 30) * ((100vw - 320px) / (699 - 320)));
-        margin-bottom: calc(25px + (30 - 25) * ((100vw - 320px) / (699 - 320)));
+        margin-bottom: calc(27px + (30 - 27) * ((100vw - 320px) / (699 - 320)));
     }
     .header__menu_order_socials {
         flex-direction: column;
@@ -621,6 +625,8 @@
     .header__menu_order_socials_email img {
         margin-right: 17px;
         margin-bottom: calc(20px + (25 - 20) * ((100vw - 320px) / (699 - 320)));
+        width: calc(24px + (30 - 24) * ((100vw - 320px) / (699 - 320)));
+        height: auto;
     }
 
 /*

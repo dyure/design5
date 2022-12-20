@@ -46,13 +46,13 @@
                             <div class="header__menu_order_socials_vk">
                                 <a href="<?php echo $d5_options['d5_contacts_vk']; ?>">
                                     <img src="<?php echo $d5_options['d5_contacts_vk_logo_white']['url']; ?>" alt="">
-                                    <p><?php echo $d5_options['d5_contacts_vk']; ?></p>
+                                    <?php echo $d5_options['d5_contacts_vk']; ?>
                                 </a>
                             </div>
                             <div class="header__menu_order_socials_telegram">
                                 <a href="<?php echo $d5_options['d5_contacts_telegram']; ?>">
                                     <img src="<?php echo $d5_options['d5_contacts_telegram_logo_white']['url']; ?>" alt="">
-                                    <p><?php echo $d5_options['d5_contacts_telegram']; ?></p>
+                                    <?php echo $d5_options['d5_contacts_telegram']; ?>
                                 </a>
                             </div>
                         </div>
@@ -60,13 +60,13 @@
                             <div class="header__menu_order_socials_whatsapp">
                                 <a href="<?php echo $d5_options['d5_contacts_whatsapp']; ?>">
                                     <img src="<?php echo $d5_options['d5_contacts_whatsapp_logo_white']['url']; ?>" alt="">
-                                    <p><?php echo $d5_options['d5_contacts_whatsapp']; ?></p>
+                                    <?php echo $d5_options['d5_contacts_whatsapp']; ?>
                                 </a>
                             </div>
                             <div class="header__menu_order_socials_email">
                                 <a href="mailto:<?php echo $d5_options['d5_contacts_email']; ?>">
                                     <img src="<?php echo $d5_options['d5_contacts_email_logo_white']['url']; ?>" alt="">
-                                    <p><?php echo $d5_options['d5_contacts_email']; ?></p>
+                                    <?php echo $d5_options['d5_contacts_email']; ?>
                                 </a>
                             </div>
                         </div>
@@ -81,13 +81,13 @@
                             <div class="header__menu_order_socials_vk">
                                 <a href="<?php echo $d5_options['d5_contacts_vk']; ?>">
                                     <img src="<?php echo $d5_options['d5_contacts_vk_logo_white']['url']; ?>" alt="">
-                                    <p><?php echo $d5_options['d5_contacts_vk']; ?></p>
+                                    <?php echo $d5_options['d5_contacts_vk']; ?>
                                 </a>
                             </div>
                             <div class="header__menu_order_socials_telegram">
                                 <a href="<?php echo $d5_options['d5_contacts_telegram']; ?>">
                                     <img src="<?php echo $d5_options['d5_contacts_telegram_logo_white']['url']; ?>" alt="">
-                                    <p><?php echo $d5_options['d5_contacts_telegram']; ?></p>
+                                    <?php echo $d5_options['d5_contacts_telegram']; ?>
                                 </a>
                             </div>
                         </div>
@@ -95,13 +95,13 @@
                             <div class="header__menu_order_socials_whatsapp">
                                 <a href="<?php echo $d5_options['d5_contacts_whatsapp']; ?>">
                                     <img src="<?php echo $d5_options['d5_contacts_whatsapp_logo_white']['url']; ?>" alt="">
-                                    <p><?php echo $d5_options['d5_contacts_whatsapp']; ?></p>
+                                    <?php echo $d5_options['d5_contacts_whatsapp']; ?>
                                 </a>
                             </div>
                             <div class="header__menu_order_socials_email">
                                 <a href="mailto:<?php echo $d5_options['d5_contacts_email']; ?>">
                                     <img src="<?php echo $d5_options['d5_contacts_email_logo_white']['url']; ?>" alt="">
-                                    <p><?php echo $d5_options['d5_contacts_email']; ?></p>
+                                    <?php echo $d5_options['d5_contacts_email']; ?>
                                 </a>
                             </div>
                         </div>

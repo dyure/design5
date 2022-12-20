@@ -382,7 +382,7 @@ ul {
 .header__menu_menu {
     display: flex;
     justify-content: start;
-    margin-bottom: calc(50px + (70 - 50) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-bottom: calc(33px + (50 - 33) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .menu_left,
 .menu_right {
@@ -396,7 +396,7 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
-    margin-bottom: calc(17px + (20 - 17) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-bottom: 12px;
     padding-bottom: 4px;
     border-bottom: 1px solid #78777e;
     transition: 1000ms;
@@ -429,9 +429,10 @@ ul {
 .header__menu_contacts.active {
     display: block;
 }
-.header__menu_order p,
-.header__menu_order a p,
-.header__menu_contacts a p {
+.header__menu_order,
+.header__menu_contacts,
+.header__menu_order a,
+.header__menu_contacts a {
     color: #ffffff!important;
     font-weight: 400;
 }
@@ -446,6 +447,7 @@ ul {
     font-size: calc(14px + (16 - 14) * ((100vw - 1300px) / (1920 - 1300)));
     line-height: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
     margin-bottom: 13px;
+    color: #ffffff
 }
 .header__menu_order_text p:last-child {
     margin-bottom: 0;
@@ -480,16 +482,18 @@ ul {
 .header__menu_order_socials_email a {
     display: flex;
 }
-.header__menu_order_socials_vk a p:hover,
-.header__menu_order_socials_telegram a p:hover,
-.header__menu_order_socials_whatsapp a p:hover,
-.header__menu_order_socials_email a p:hover {
+.header__menu_order_socials_vk a:hover,
+.header__menu_order_socials_telegram a:hover,
+.header__menu_order_socials_whatsapp a:hover,
+.header__menu_order_socials_email a:hover {
     text-decoration: underline;
 }
 .header__menu_order_socials_vk img,
 .header__menu_order_socials_telegram img,
 .header__menu_order_socials_whatsapp img,
 .header__menu_order_socials_email img {
+    width: calc(26px + (30 - 26) * ((100vw - 1300px) / (1920 - 1300)));
+    height: auto;
     margin-right: 10px;
     margin-bottom: 25px;
 }
