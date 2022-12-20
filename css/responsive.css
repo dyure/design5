@@ -109,7 +109,7 @@
         padding-right: 0;
     }
     .header__menu_menu {
-        /*margin-top: calc(23px + (43 - 23) * ((100vw - 700px) / (1299 - 700)) * (1 - 2));*/
+        margin-top: 0;
         margin-bottom: calc(20px + (40 - 20) * ((100vw - 700px) / (1299 - 700)));
     }
     .menu_left,
