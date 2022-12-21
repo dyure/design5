@@ -39,7 +39,7 @@
                         <?php echo $d5_options['d5_misc_field_3']; ?>
                     </div>
                     <div class="header__menu_order_phone">
-                        <a style="color: inherit;" href="tel:<?php echo $strPhoneToCall; ?>"><?php echo $d5_options['d5_contacts_phone']; ?></a>
+                        <a style="color: inherit; font-weight: 600;" href="tel:<?php echo $strPhoneToCall; ?>"><?php echo $d5_options['d5_contacts_phone']; ?></a>
                     </div>
                     <div class="header__menu_order_socials">
                         <div class="header__menu_order_socials_left">
@@ -74,7 +74,7 @@
                 </div>
                 <div class="header__menu_contacts">
                     <div class="header__menu_order_phone">
-                        <a style="color: inherit;" href="tel:<?php echo $strPhoneToCall; ?>"><?php echo $d5_options['d5_contacts_phone']; ?></a>
+                        <a style="color: inherit; font-weight: 600;" href="tel:<?php echo $strPhoneToCall; ?>"><?php echo $d5_options['d5_contacts_phone']; ?></a>
                     </div>
                     <div class="header__menu_order_socials">
                         <div class="header__menu_order_socials_left">

@@ -18,7 +18,7 @@
                 <?php the_content(); ?>
             </div>
             <div class="anonce__video">
-                <video autoplay="" loop="" muted="" src="https://blacksea.dm1tr11.ru/wp-content/uploads/2022/06/adobe98.mp4" playsinline=""></video>
+                <video autoplay="" loop="" muted="" src="https://blacksea.dm1tr11.ru/wp-content/uploads/2022/12/main_new.mp4" playsinline=""></video>
             </div>
         </div>
         <div class="anonce__add">
@@ -127,7 +127,7 @@
 
 <?php get_template_part('inc/want_design'); ?>
 
-<?php //get_template_part('inc/articles'); ?>
+<?php get_template_part('inc/articles'); ?>
 
 <?php get_footer(); ?>
 

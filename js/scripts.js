@@ -44,7 +44,7 @@ jQuery(function ($) {
             // the code below opens header through 2 sec
             $.data(this, 'scrollTimer', setTimeout(function(){
                 /*header.removeClass('out');*/
-                header.removeClass('in');
+                if (scrolled == 0) header.removeClass('in');
             }, 2000));
         }
     });
