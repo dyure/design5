@@ -300,20 +300,25 @@
         min-height: 0;
     }
     .description {
-        margin-bottom: calc(50px + (60 - 50) * ((100vw - 700px) / (1299 - 700)));
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(41, 39, 47, 0) 0%, rgba(246, 116, 0, 0) 0.01%, #000000 100%);
+        width: 100%;
+        height: calc(80px + (140 - 80) * ((100vw - 700px) / (1299 - 700)));
+        display: flex;
+        align-items: flex-end;
     }
-    .description h3 {
+    .description_body {
+        margin-bottom: calc(12px + (20 - 12) * ((100vw - 700px) / (1299 - 700)));
+        margin-left: calc(20px + (30 - 20) * ((100vw - 700px) / (1299 - 700)));
+        margin-right: calc(10px + (30 - 10) * ((100vw - 700px) / (1299 - 700)));
+    }
+    /*.description h3 {
         margin-top: calc(20px + (25 - 20) * ((100vw - 700px) / (1299 - 700)));
         margin-bottom: 15px;
         font-weight: 600;
         font-size: calc(16px + (20 - 16) * ((100vw - 700px) / (1299 - 700)));
         line-height: calc(25px + (30 - 25) * ((100vw - 700px) / (1299 - 700)));
-    }
-    .description p {
-        margin-bottom: 15px;
-        font-weight: 400;
-        font-size: calc(14px + (16 - 14) * ((100vw - 700px) / (1299 - 700)));
-        line-height: calc(20px + (30 - 20) * ((100vw - 700px) / (1299 - 700)));
     }
     .description p a {
         color: inherit;
@@ -321,6 +326,12 @@
         font-size: calc(14px + (16 - 14) * ((100vw - 700px) / (1299 - 700)));
         line-height: calc(20px + (25 - 20) * ((100vw - 700px) / (1299 - 700)));
         text-decoration: underline;
+    }*/
+    .description_body p {
+        color: #ffffff;
+        font-weight: 600;
+        font-size: calc(14px + (16 - 14) * ((100vw - 700px) / (1299 - 700)));
+        line-height: calc(20px + (25 - 20) * ((100vw - 700px) / (1299 - 700)));
     }
 /*
     want design

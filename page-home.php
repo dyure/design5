@@ -91,8 +91,10 @@
                     <a href="<?php echo get_the_permalink(); ?>">
                         <img class="da-image" src="<?php echo get_the_post_thumbnail_url($post->ID, 'large'); ?>" alt="">
                     </a>
-                    <div class="description no_mobile">
-                        <h3><?php echo get_the_title(); ?></h3>
+                    <div class="description">
+                        <div class="description_body">
+                            <p><?php echo get_the_title(); ?></p>
+                        </div>
                     </div>
                 </div>
 <?php
