@@ -299,10 +299,32 @@
     .da-image {
         min-height: 0;
     }
+    .desc {
+        margin-bottom: calc(12px + (20 - 12) * ((100vw - 700px) / (1299 - 700)));
+    }
+    .desc h3 {
+        margin-top: calc(20px + (25 - 20) * ((100vw - 700px) / (1299 - 700)));
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: calc(16px + (20 - 16) * ((100vw - 700px) / (1299 - 700)));
+        line-height: calc(25px + (30 - 25) * ((100vw - 700px) / (1299 - 700)));
+    }
+    .desc p {
+        font-weight: 600;
+        font-size: calc(14px + (16 - 14) * ((100vw - 700px) / (1299 - 700)));
+        line-height: calc(20px + (25 - 20) * ((100vw - 700px) / (1299 - 700)));
+    }
+    .desc p a {
+        color: inherit;
+        font-weight: 600;
+        font-size: calc(14px + (16 - 14) * ((100vw - 700px) / (1299 - 700)));
+        line-height: calc(20px + (25 - 20) * ((100vw - 700px) / (1299 - 700)));
+        text-decoration: underline;
+    }
     .description {
         position: absolute;
-        bottom: 0;
-        background: linear-gradient(180deg, rgba(41, 39, 47, 0) 0%, rgba(246, 116, 0, 0) 0.01%, #000000 100%);
+        bottom: 4px;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
         width: 100%;
         height: calc(80px + (140 - 80) * ((100vw - 700px) / (1299 - 700)));
         display: flex;
@@ -313,20 +335,6 @@
         margin-left: calc(20px + (30 - 20) * ((100vw - 700px) / (1299 - 700)));
         margin-right: calc(10px + (30 - 10) * ((100vw - 700px) / (1299 - 700)));
     }
-    /*.description h3 {
-        margin-top: calc(20px + (25 - 20) * ((100vw - 700px) / (1299 - 700)));
-        margin-bottom: 15px;
-        font-weight: 600;
-        font-size: calc(16px + (20 - 16) * ((100vw - 700px) / (1299 - 700)));
-        line-height: calc(25px + (30 - 25) * ((100vw - 700px) / (1299 - 700)));
-    }
-    .description p a {
-        color: inherit;
-        font-weight: 600;
-        font-size: calc(14px + (16 - 14) * ((100vw - 700px) / (1299 - 700)));
-        line-height: calc(20px + (25 - 20) * ((100vw - 700px) / (1299 - 700)));
-        text-decoration: underline;
-    }*/
     .description_body p {
         color: #ffffff;
         font-weight: 600;
@@ -480,6 +488,7 @@
         margin-right: 0;
     }
     .footer__features {
+        width: calc(117px + (179 - 117) * ((100vw - 700px) / (1299 - 700)));
         margin-right: calc(37px + (132 - 37) * ((100vw - 700px) / (1299 - 700)));
     }
     .footer__menu {
@@ -769,17 +778,26 @@
         height: calc(32px + (40 - 32) * ((100vw - 320px) / (699 - 320)));
         margin-top: calc(10px + (25 - 10) * ((100vw - 320px) / (699 - 320)));
     }
-    /*.description {
-        display: none;
-    }*/
-    .description h3 {
+    .desc {
+        margin-bottom: calc(50px + (80 - 50) * ((100vw - 320px) / (699 - 320)));
+    }
+    .desc h3 {
         margin-top: calc(15px + (30 - 15) * ((100vw - 320px) / (699 - 320)));
         margin-bottom: calc(10px + (15 - 10) * ((100vw - 320px) / (699 - 320)));
         font-size: 20px;
         line-height: 30px;
     }
     .description {
-        margin-bottom: calc(50px + (80 - 50) * ((100vw - 320px) / (699 - 320)));
+        height: calc(60px + (80 - 60) * ((100vw - 320px) / (699 - 320)));
+    }
+    .description_body {
+        margin-bottom: calc(10px + (25 - 10) * ((100vw - 320px) / (699 - 320)));
+        margin-left: calc(18px + (30 - 18) * ((100vw - 320px) / (699 - 320)));
+        margin-right: 10px;
+    }
+    .description_body p {
+        font-size: 16px;
+        line-height: 25px;
     }
     .read_more {
         display: block;

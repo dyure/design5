@@ -625,7 +625,9 @@ ul {
     font-size: calc(35px + (50 - 35) * ((100vw - 1300px) / (1920 - 1300)));
     line-height: calc(45px + (65 - 45) * ((100vw - 1300px) / (1920 - 1300)));
     letter-spacing: 0.01em;
-    margin-bottom: calc(15px + (30 - 15) * ((100vw - 1300px) / (1920 - 1300)));
+}
+.misc_field_1 h2 {
+    margin-bottom: calc(38px + (30 - 38) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .anonce__text h2:last-child {
     margin-bottom: 0;
@@ -697,7 +699,7 @@ ul {
 	grid-template-columns: repeat(4, 1fr);
     grid-gap: calc(28px + (36 - 28) * ((100vw - 1300px) / (1920 - 1300)));
     margin-top: calc(60px + (100 - 60) * ((100vw - 1300px) / (1920 - 1300)));
-    margin-bottom: calc(120px + (150 - 120) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-bottom: calc(110px + (150 - 110) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .items_1.active {
     grid-template-areas: "item_11 item_21"

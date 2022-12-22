@@ -51,7 +51,7 @@
                 </div>
                 <div class="no_descktop item_<?php echo $intPostCount; ?>1">
                     <img class="da-image" src="<?php echo get_the_post_thumbnail_url($post->ID, 'large'); ?>" alt="">
-                    <div class="description">
+                    <div class="desc">
                         <h3><?php echo get_the_title(); ?></h3>
                         <?php echo get_the_content(); ?>
                     </div>
