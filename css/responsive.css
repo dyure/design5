@@ -175,8 +175,9 @@
     .content {
         padding: 0 calc(30px + (50 - 30) * ((100vw - 700px) / (1299 - 700)));
     }
-    .content__body p {
-        margin: calc(12px + (18 - 12) * ((100vw - 700px) / (1299 - 700))) 0;
+    .content__body p a {
+        margin-top: 15px;
+        margin-bottom: calc(50px + (60 - 50) * ((100vw - 700px) / (1299 - 700)));
     }
     .anonce {
         display: flex;
@@ -236,7 +237,6 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 30px;
-        margin-bottom: calc(21px + (28 - 21) * ((100vw - 700px) / (1299 - 700)));
     }
     .content__body_single h2 {
         margin-top: calc(50px + (70 - 50) * ((100vw - 700px) / (1299 - 700)));
@@ -310,7 +310,7 @@
         line-height: calc(25px + (30 - 25) * ((100vw - 700px) / (1299 - 700)));
     }
     .desc p {
-        font-weight: 600;
+        font-weight: 400;
         font-size: calc(14px + (16 - 14) * ((100vw - 700px) / (1299 - 700)));
         line-height: calc(20px + (25 - 20) * ((100vw - 700px) / (1299 - 700)));
     }
@@ -320,6 +320,7 @@
         font-size: calc(14px + (16 - 14) * ((100vw - 700px) / (1299 - 700)));
         line-height: calc(20px + (25 - 20) * ((100vw - 700px) / (1299 - 700)));
         text-decoration: underline;
+        margin-top: 15px;
     }
     .description {
         position: absolute;
@@ -688,7 +689,9 @@
     .content__body p {
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (699 - 320)));
         line-height: calc(20px + (30 - 20) * ((100vw - 320px) / (699 - 320)));
-        margin-bottom: calc(21px + (28 - 21) * ((100vw - 320px) / (699 - 320)));
+    }
+    .content__body p a {
+        margin-bottom: calc(50px + (80 - 50) * ((100vw - 320px) / (699 - 320)));
     }
     .croped img {
         width: 100vw;

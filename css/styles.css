@@ -576,7 +576,7 @@ ul {
 }
 
 .content__body p {
-    margin: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300))) 0;
+    margin-top: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .content__body p:last-child {
     margin-bottom: 0;
@@ -1190,6 +1190,9 @@ ul {
 .input_control {
     position: relative;
 }
+.want_design_form {
+    position: relative;
+}
 .want_design_form label {
     position: absolute;
     top: -29px;
@@ -1225,6 +1228,13 @@ ul {
     font-size: calc(14px + (16 - 14) * ((100vw - 1300px) / (1920 - 1300)));
     line-height: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
     margin-bottom: calc(25px + (30 - 25) * ((100vw - 1300px) / (1920 - 1300)));
+}
+.error {
+    font-weight: 600;
+    position: absolute;
+    top: 91px;
+    right: 146px;
+    color: #ff0000;
 }
 .want_design_form_button {
     display: flex;

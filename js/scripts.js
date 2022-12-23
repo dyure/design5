@@ -144,9 +144,33 @@ jQuery(function ($) {
     $('#fldPhone').inputmask({
         "mask" : "+7 (999) 999-99-99"
     });
+    //$('.want_design_form_button').removeAttr('disabled');
+    //$('.want_design_form_button').attr('disabled', 'disabled');
+
+    var form  = document.getElementById('send_letter');
+    var input = document.getElementById('fldPhone');
+    var elem           = document.createElement('div');
+    elem.id            = 'notify';
+    elem.style.display = 'none';
+    form.appendChild(elem);
+    input.addEventListener('invalid', function(event){
+        event.preventDefault();
+        if ( ! event.target.validity.valid ) {
+            elem.textContent   = 'заполните корректно данные';
+            elem.className     = 'error';
+            elem.style.display = 'block';
+            //input.className    = 'invalid animated shake';
+        }
+    });
+    input.addEventListener('input', function(event){
+        if ( 'block' === elem.style.display ) {
+            input.className = '';
+            elem.style.display = 'none';
+        }
+    });
 
     // to send form
-    $(".want_design_form_button").on("click", function (event){
+    /*$(".want_design_form_button").on("click", function (event){
         event.preventDefault();
         var name = $('.input_name').val();
         var tel = $('.input_phone').val();
@@ -175,7 +199,7 @@ jQuery(function ($) {
                 $('.popup-fade').css('display', 'flex');
             }
         });
-    });
+    });*/
 
     // Клик по кнопке "Закрыть".
     $(document).on('click', '.popup-close', function() {

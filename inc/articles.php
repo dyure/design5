@@ -1,5 +1,5 @@
 <div class="articles">
-    <div class="articles_body">
+    <div class="articles_body dragscroll">
 <?php
     $args = array('post_type' => 'articles', 'posts_per_page' => 3);
     $the_query = new WP_Query($args);
