@@ -136,12 +136,12 @@
     // Отправляем почтовое сообщение
         if ($len_tel == 11) {
             if (mail($mail_to, $thm, $msg, $headers)) {
-                $response = '<p class="text">Ваша заявка принята</p>';
+                $response = 'ваша заявка принята';
             } else {
-                $response = '<div class="popup-red"><p class="text-red">Ошибка при отправке</p></div>';
+                $response = 'ошибка при отправке';
             }
         } else {
-           $response = '<div class="popup-red"><p class="text-red">Пожалуйста, заполните форму с&nbsp;номером телефона!</p></div>';
+           $response = 'заполните корректно данные!';
         }
     // Сообщение о результате отправки почты
         if (defined('DOING_AJAX') && DOING_AJAX) {

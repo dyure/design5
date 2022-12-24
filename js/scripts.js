@@ -128,49 +128,18 @@ jQuery(function ($) {
         $('.header__menu_order').slideUp(500);
     });
 
-    // to open form by click on order_button
-    /*$('.order_button').click (function(event){
-        var target = $('.want_design').offset().top - 40;
-        $('.order_button').css('display', 'none');
-        $("html, body").animate({scrollTop: target}, 800)
-    });*/
-
     // to open read_more
     $('.read_more').click(function(event){
         $(this).css('display', 'none').parents('.items').find('.anonce_hidden').css('display', 'block');
     });
 
-    // working something with labels and input fields
+    // set input mask
     $('#fldPhone').inputmask({
         "mask" : "+7 (999) 999-99-99"
     });
-    //$('.want_design_form_button').removeAttr('disabled');
-    //$('.want_design_form_button').attr('disabled', 'disabled');
-
-    var form  = document.getElementById('send_letter');
-    var input = document.getElementById('fldPhone');
-    var elem           = document.createElement('div');
-    elem.id            = 'notify';
-    elem.style.display = 'none';
-    form.appendChild(elem);
-    input.addEventListener('invalid', function(event){
-        event.preventDefault();
-        if ( ! event.target.validity.valid ) {
-            elem.textContent   = 'заполните корректно данные';
-            elem.className     = 'error';
-            elem.style.display = 'block';
-            //input.className    = 'invalid animated shake';
-        }
-    });
-    input.addEventListener('input', function(event){
-        if ( 'block' === elem.style.display ) {
-            input.className = '';
-            elem.style.display = 'none';
-        }
-    });
 
     // to send form
-    /*$(".want_design_form_button").on("click", function (event){
+    $(".want_design_form_button").on("click", function (event){
         event.preventDefault();
         var name = $('.input_name').val();
         var tel = $('.input_phone').val();
@@ -183,43 +152,24 @@ jQuery(function ($) {
                 tel: tel
             },
             success: function (response) {
-                $('.popup').html(response);
-                $('.popup-fade').css('display', 'flex');
-                var red = $('.popup-red').html();
+                $('#notify').addClass('error');
+                $('#notify').css('display', 'block');
+                $('#notify').html(response);
+                var red = $('#notify').html();
                 if (red.includes('!')) {
                     var ex = function(){
-                        $('.popup-fade').fadeOut();
+                        $('#notify').css('display', 'none');
                         $('.input_phone').focus();
                     };
                     setTimeout(ex, 2000);
                 }
             },
             error: function (response) {
-                $('.popup').html(response);
-                $('.popup-fade').css('display', 'flex');
+                $('#notify').addClass('error');
+                $('#notify').css('display', 'block');
+                $('#notify').html(response);
             }
         });
-    });*/
-
-    // Клик по кнопке "Закрыть".
-    $(document).on('click', '.popup-close', function() {
-        $(this).parents('.popup-fade').fadeOut();
-        return false;
-    });        
-
-    // Закрытие по клавише Esc.
-    $(document).keydown(function(e) {
-        if (e.keyCode === 27) {
-            e.stopPropagation();
-            $('.popup-fade').fadeOut();
-        }
-    });
-
-    // Клик по фону.
-    $('.popup-fade').click(function(e) {
-        if ($(e.target).closest('.popup').length == 0) {
-            $(this).fadeOut();					
-        }
     });
 
     boxes = document.querySelectorAll('.boxes');

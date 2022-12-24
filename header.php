@@ -112,10 +112,6 @@
     </div>
 </header>
 
-<div class="popup-fade">
-    <div class="popup"></div>
-</div>
-
 <div class="order_button">
     Заказать D5
 </div>

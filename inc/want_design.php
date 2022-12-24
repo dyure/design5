@@ -11,6 +11,7 @@
                     <label for="fldName" id="fldName_label">Имя</label>
                     <input type="text" name="fldName" class="input_name" id="fldName" autocomplete="off">
                 </div>
+                <div id="notify"></div>
                 <div class="input_control">
                     <label for="fldPhone" id="fldPhone_label">Телефон*</label>
                     <input type="tel" name="fldPhone" class="input_phone" id="fldPhone" autocomplete="off" required pattern="\+\d \(\d{3}\) \d{3}-\d{2}-\d{2}">
