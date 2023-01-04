@@ -16,7 +16,7 @@
                     <label for="fldPhone" id="fldPhone_label">Телефон*</label>
                     <input type="tel" name="fldPhone" class="input_phone" id="fldPhone" autocomplete="off" required pattern="\+\d \(\d{3}\) \d{3}-\d{2}-\d{2}">
                 </div>
-                <p>Нажимая кнопку вы даете согласие на обработку персональных данных</p>
+                <p class="legal">Нажимая кнопку вы даете согласие на обработку персональных данных</p>
                 <div>
                     <input class="want_design_form_button" type="submit" value="Отправить">
                 </div>

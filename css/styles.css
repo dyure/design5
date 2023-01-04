@@ -474,7 +474,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     margin-top: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
-    margin-bottom: calc(60px + (100 - 60) * ((100vw - 1300px) / (1920 - 1300)));/
+    margin-bottom: calc(60px + (100 - 60) * ((100vw - 1300px) / (1920 - 1300)));
     transition: 1000ms;
 }
 .anonce.active {
@@ -541,7 +541,7 @@ ul {
     width: calc(1221px + (1341 - 1221) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .misc_field_1.active {
-    width: calc(624px + (900 - 624) * ((100vw - 1300px) / (1920 - 1300)));
+    width: calc(624px + (1020 - 624) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .misc_field_1 h2 {
     font-weight: 600;
@@ -560,12 +560,12 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 .misc_field_1.active p {
-    font-size: 14px;
-    line-height: 20px;
-    margin-bottom: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
+    font-size: calc(14px + (16 - 14) * ((100vw - 1300px) / (1920 - 1300)));
+    line-height: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-bottom: 15px;
 }
 .misc_field_1 p:last-child,
 .misc_field_1.active p:last-child {
@@ -602,6 +602,7 @@ ul {
                          "item_51 item_61";
     grid-template-rows: unset;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: calc(80px + (110 - 80) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .items_1 .item_11 {
 	grid-area: item_11;
@@ -633,27 +634,6 @@ ul {
 	overflow: hidden;
     position: relative;
 }
-.items_1 .item_11 img,
-.items_1 .item_21 img,
-.items_1 .item_51 img,
-.items_1 .item_61 img {
-    width: calc(284px + (423 - 284) * ((100vw - 1300px) / (1920 - 1300)));
-    height: calc(284px + (423 - 284) * ((100vw - 1300px) / (1920 - 1300)));
-}
-.items_1 .item_31 img,
-.items_1 .item_41 img {
-    width: calc(595px + (882 - 595) * ((100vw - 1300px) / (1920 - 1300)));
-    height: calc(595px + (882 - 595) * ((100vw - 1300px) / (1920 - 1300)));
-}
-.items_1.active .item_11 img,
-.items_1.active .item_21 img,
-.items_1.active .item_31 img,
-.items_1.active .item_41 img,
-.items_1.active .item_51 img,
-.items_1.active .item_61 img {
-    width: calc(308px + (496 - 308) * ((100vw - 1300px) / (1920 - 1300)));
-    height: calc(308px + (496 - 308) * ((100vw - 1300px) / (1920 - 1300)));
-}
 
 .items_2 {
     display: grid;
@@ -671,9 +651,11 @@ ul {
 .items_2.active,
 .items_3.active,
 .items_4.active {
-    gap: calc(10px + (28 - 10) * ((100vw - 1300px) / (1920 - 1300)));
+    row-gap: calc(10px + (23 - 10) * ((100vw - 1300px) / (1920 - 1300)));
+    column-gap: calc(13px + (28 - 13) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .items_2.active {
+    margin-top: calc(80px + (110 - 80) * ((100vw - 1300px) / (1920 - 1300)));
     margin-bottom: calc(10px + (28 - 10) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .items_2 .item_12 {
@@ -851,7 +833,8 @@ ul {
     left: 0;
     font-size: 35px;
     line-height: 45px;
-    margin: 40px 20px 30px 50px;
+    margin-top: calc(25px + (40 - 25) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-left: calc(40px + (50 - 40) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .item_31 .topic_name.active h3,
 .item_41 .topic_name.active h3 {
@@ -887,7 +870,7 @@ ul {
     font-size: calc(14px + (16 - 14) * ((100vw - 1300px) / (1920 - 1300)));
     line-height: calc(20px + (25 - 20) * ((100vw - 1300px) / (1920 - 1300)));
     margin-left: calc(15px + (40 - 15) * ((100vw - 1300px) / (1920 - 1300)));
-    margin-right: calc(15px + (20 - 15) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-right: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
     margin-bottom: calc(9px + (30 - 9) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .item_12 .overlay_posts h3,
@@ -899,7 +882,8 @@ ul {
 .item_41 .overlay_topics h3 {
     font-size: 35px;
     line-height: 45px;
-    margin: 40px 20px 30px 50px;
+    margin-top: calc(25px + (40 - 25) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-left: calc(40px + (50 - 40) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .item_11 .overlay_topics h3,
 .item_21 .overlay_topics h3,
@@ -920,7 +904,7 @@ ul {
     line-height: calc(25px + (30 - 25) * ((100vw - 1300px) / (1920 - 1300)));
     margin-top: calc(20px + (40 - 20) * ((100vw - 1300px) / (1920 - 1300)));
     margin-left: calc(15px + (40 - 15) * ((100vw - 1300px) / (1920 - 1300)));
-    margin-right: calc(15px + (20 - 15) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-right: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
     margin-bottom: calc(5px + (15 - 5) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .item_12 .overlay_posts p,
@@ -933,7 +917,10 @@ ul {
 .item_41 .overlay_topics p {
     font-size: 16px;
     line-height: 25px;
-    margin: 0 20px 30px 50px;
+    margin-top: calc(10px + (30 - 10) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-right: calc(30px + (132 - 30) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-bottom: calc(25px + (30 - 25) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-left: calc(40px + (50 - 40) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .item_11 .overlay_topics p,
 .item_21 .overlay_topics p,
@@ -994,7 +981,7 @@ ul {
     line-height: calc(20px + (25 - 20) * ((100vw - 1300px) / (1920 - 1300)));
     margin-top: 0;
     margin-left: calc(15px + (30 - 15) * ((100vw - 1300px) / (1920 - 1300)));
-    margin-right: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-right: calc(30px + (30 - 30) * ((100vw - 1300px) / (1920 - 1300)));
     margin-bottom: calc(9px + (30 - 9) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .item_53 {
@@ -1008,7 +995,6 @@ ul {
     font-weight: 600;
     font-size: calc(20px + (35 - 20) * ((100vw - 1300px) / (1920 - 1300)));
     line-height: calc(30px + (45 - 30) * ((100vw - 1300px) / (1920 - 1300)));
-    /*letter-spacing: 0.03em;*/
     margin-top: calc(30px + (50 - 30) * ((100vw - 1300px) / (1920 - 1300)));
     margin-left: calc(20px + (40 - 20) * ((100vw - 1300px) / (1920 - 1300)));
     margin-right: calc(16px + (24 - 16) * ((100vw - 1300px) / (1920 - 1300)));
@@ -1048,7 +1034,7 @@ ul {
 }
 .want_design.active {
     width: calc(706px + (1140 - 706) * ((100vw - 1300px) / (1920 - 1300)));
-    height: calc(570px + (700 - 570) * ((100vw - 1300px) / (1920 - 1300)));
+    height: calc(570px + (650 - 570) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .want_design_body {
     width: 100%;
@@ -1081,14 +1067,16 @@ ul {
     font-weight: 600;
     font-size: calc(35px + (50 - 35) * ((100vw - 1300px) / (1920 - 1300)));
     line-height: calc(45px + (65 - 45) * ((100vw - 1300px) / (1920 - 1300)));
+    width: calc(440px + (580 - 440) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .want_design_body_title.active h3 {
     margin-top: calc(50px + (60 - 50) * ((100vw - 1300px) / (1920 - 1300)));
-    margin-bottom: calc(30px + (10 - 30) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-bottom: calc(10px + (30 - 10) * ((100vw - 1300px) / (1920 - 1300)));
     margin-left: 0;
     margin-right: calc(134px + (102 - 134) * ((100vw - 1300px) / (1920 - 1300)));
     font-size: calc(20px + (35 - 20) * ((100vw - 1300px) / (1920 - 1300)));
     line-height: calc(30px + (45 - 30) * ((100vw - 1300px) / (1920 - 1300)));
+    width: calc(432px + (828 - 432) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .want_design_body_title p {
     margin-left: calc(78px + (153 - 78) * ((100vw - 1300px) / (1920 - 1300)));
@@ -1096,16 +1084,17 @@ ul {
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
+    width: calc(440px + (580 - 440) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .want_design_body_title.active p {
     margin-left: 0;
     margin-right: calc(134px + (118 - 134) * ((100vw - 1300px) / (1920 - 1300)));
     font-size: calc(16px + (20 - 16) * ((100vw - 1300px) / (1920 - 1300)));
     line-height: calc(25px + (30 - 25) * ((100vw - 1300px) / (1920 - 1300)));
+    width: calc(432px + (828 - 432) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .want_design_body_form {
-    padding-top: calc(50px + (83 - 50) * ((100vw - 1300px) / (1920 - 1300)));
-    padding-left: calc(44px + (104 - 44) * ((100vw - 1300px) / (1920 - 1300)));
+    padding-left: calc(34px + (94 - 34) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .input_control {
     position: relative;
@@ -1115,11 +1104,26 @@ ul {
 }
 .want_design_form label {
     position: absolute;
-    top: -29px;
-    left: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
+}
+#fldName_label {
+    top: calc(50px + (83 - 50) * ((100vw - 1300px) / (1920 - 1300)));
+    left: 0;
+}
+#fldName_label.active {
+    top: calc(17px + (30 - 17) * ((100vw - 1300px) / (1920 - 1300)));
+    font-size: 14px;
+    line-height: 40px;
+}
+#fldPhone_label {
+    top: -29px;
+    left: 0;
+}
+#fldPhone_label.active {
+    font-size: 14px;
+    line-height: 20px;
 }
 .want_design_form .input_name,
 .want_design_form .input_phone {
@@ -1133,21 +1137,28 @@ ul {
 }
 .want_design_form .input_name.active,
 .want_design_form .input_phone.active {
-    /*margin-left: calc(60px + (90 - 60) * ((100vw - 1300px) / (1920 - 1300)));*/
     width: calc(432px + (644 - 432) * ((100vw - 1300px) / (1920 - 1300)));
     height: calc(50px + (60 - 50) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .want_design_form .input_name {
-    margin-bottom: calc(45px + (58 - 45) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-top: calc(80px + (113 - 80) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-bottom: 45px;
+}
+.want_design_form .input_name.active {
+    margin-top: calc(50px + (60 - 50) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .want_design_form .input_phone {
     margin-bottom: calc(30px + (35 - 30) * ((100vw - 1300px) / (1920 - 1300)));
 }
-.want_design_form p {
+.want_design_form .legal {
     font-weight: 400;
     font-size: calc(14px + (16 - 14) * ((100vw - 1300px) / (1920 - 1300)));
     line-height: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
-    margin-bottom: calc(25px + (30 - 25) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-bottom: calc(45px + (30 - 45) * ((100vw - 1300px) / (1920 - 1300)));
+}
+.want_design_form .legal.active {
+    margin-bottom: 35px;
+    width: 500px;
 }
 #notify {
     display: none;
