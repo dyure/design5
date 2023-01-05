@@ -658,6 +658,9 @@ ul {
     margin-top: calc(80px + (110 - 80) * ((100vw - 1300px) / (1920 - 1300)));
     margin-bottom: calc(10px + (28 - 10) * ((100vw - 1300px) / (1920 - 1300)));
 }
+.items_3.active {
+    margin-bottom: calc(80px + (110 - 80) * ((100vw - 1300px) / (1920 - 1300)));
+}
 .items_2 .item_12 {
     grid-area: item_12;
     overflow: hidden;
@@ -1114,16 +1117,10 @@ ul {
 }
 #fldName_label.active {
     top: calc(17px + (30 - 17) * ((100vw - 1300px) / (1920 - 1300)));
-    font-size: 14px;
-    line-height: 40px;
 }
 #fldPhone_label {
     top: -29px;
     left: 0;
-}
-#fldPhone_label.active {
-    font-size: 14px;
-    line-height: 20px;
 }
 .want_design_form .input_name,
 .want_design_form .input_phone {
@@ -1155,10 +1152,11 @@ ul {
     font-size: calc(14px + (16 - 14) * ((100vw - 1300px) / (1920 - 1300)));
     line-height: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
     margin-bottom: calc(45px + (30 - 45) * ((100vw - 1300px) / (1920 - 1300)));
+    width: 828px;
 }
 .want_design_form .legal.active {
-    margin-bottom: 35px;
-    width: 500px;
+    margin-bottom: 31px;
+    width: calc(432px + (828 - 432) * ((100vw - 1300px) / (1920 - 1300)));
 }
 #notify {
     display: none;

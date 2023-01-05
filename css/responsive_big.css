@@ -107,8 +107,8 @@
     content
 */
     .content {
+        padding: 0 60px;
         margin-top: 116px;
-        padding: 0;
     }
     .content__body {
         max-width: 1800px;
@@ -120,8 +120,8 @@
         font-size: 50px;
         line-height: 65px;
     }
-    .content__body p {
-        margin: 80px 0;
+    .content__body_categories {
+        max-width: 1800px;
     }
     .content__body_single {
         margin-bottom: 150px;
@@ -137,12 +137,12 @@
     anonce
 */
     .anonce {
-        margin-top: 43px;
-        margin-bottom: 80px;
+        margin-top: 30px;
+        margin-bottom: 100px;
     }
     .anonce.active {
-        padding-top: 65px;
-        padding-bottom: 0;
+        margin-top: 30px;
+        margin-bottom: 80px;
     }
     .anonce__text {
         width: 918px;
@@ -150,73 +150,84 @@
     .anonce__text.active {
         width: 560px;
     }
-    .anonce__text h2,
-    .misc_field_1 h2 {
+    .anonce__text h2 {
         font-size: 50px;
         line-height: 65px;
         margin-bottom: 30px;
     }
-    .anonce__text.active h2,
-    .misc_field_1.active h2 {
-        font-size: 35px;
-        line-height: 45px;
-        margin-bottom: 30px;
-    }
-    .misc_field_1,
-    .anonce__add {
-        width: 1341px;
-    }
-    .anonce__add p {
-        font-weight: 600;
-        font-size: 18x;
-        line-height: 25px;
-    }
-    .misc_field_1.active,
-    .anonce__add.active {
-        width: 900px;
-    }
-    .anonce__text.active h2,
-    .misc_field_1.active h2 {
+    .anonce__text.active h2 {
         font-size: 35px;
         line-height: 45px;
         margin-bottom: 15px;
     }
     .anonce__video {
-        margin-right: 102px;
         width: 587px;
+        margin-right: 102px;
     }
     .anonce__video.active {
-        margin-right: 0;
-        width: 393px ;
+        width: 420px;
     }
     .anonce__video video {
         width: 587px;
-        height: 587px;
     }
     .anonce__video.active video {
         width: 393px;
         height: 393px;
     }
+    .anonce__add {
+        width: 1341px;
+    }
+    .anonce__add.active {
+        width: 900px;
+    }
+    .anonce__add.active p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .misc_field_1 {
+        width: 1341px;
+    }
+    .misc_field_1.active {
+        width: 1020px;
+    }
+    .misc_field_1 h2 {
+        font-size: 50px;
+        line-height: 65px;
+        margin-bottom: 50px;
+    }
+    .misc_field_1.active h2 {
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 30px;
+    }
+    .misc_field_1.active p {
+        font-size: 16px;
+        line-height: 30px;
+    }
 /*
     grid
 */
     .items_1 {
-        grid-gap: 36px;
+        row-gap: 32px;
+        column-gap: 36px;
         margin-top: 100px;
         margin-bottom: 150px;
     }
     .items_2 {
-        grid-gap: 36px;
+        row-gap: 32px;
+        column-gap: 36px;
         margin-top: 150px;
         margin-bottom: 36px;
     }
     .items_3 {
-        grid-gap: 36px;
+        row-gap: 32px;
+        column-gap: 36px;
         margin-bottom: 150px;
     }
     .items_4,
     .alm-reveal {
-        grid-gap: 36px;
+        row-gap: 32px;
+        column-gap: 36px;
         margin-bottom: 36px;
     }
     .items_4:last-child,
@@ -227,15 +238,19 @@
     .items_2.active,
     .items_3.active,
     .items_4.active {
-        grid-gap: 28px;
         row-gap: 23px;
+        column-gap: 28px;
     }
-    .item_1.active {
+    .items_1.active {
         margin-top: 80px;
+        margin-bottom: 110px;
     }
     .items_2.active {
         margin-top: 110px;
         margin-bottom: 28px;
+    }
+    .items_3.active {
+        margin-bottom: 110px;
     }
     .item_11 .topic_name h3,
     .item_21 .topic_name h3,
@@ -243,13 +258,24 @@
     .item_61 .topic_name h3 {
         font-size: 20px;
         line-height: 30px;
-        margin: 40px 20px 15px 40px;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 20px;
+        margin-bottom: 15px;
+    }
+    .item_31 .topic_name h3,
+    .item_41 .topic_name h3 {
+        margin-top: 40px;
+        margin-left: 50px;
     }
     .item_31 .topic_name.active h3,
     .item_41 .topic_name.active h3 {
         font-size: 20px;
         line-height: 30px;
-        margin: 40px 20px 15px 40px;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 20px;
+        margin-bottom: 15px;
     }
     .item_11 .overlay_topics.active h3,
     .item_21 .overlay_topics.active h3,
@@ -259,7 +285,10 @@
     .item_61 .overlay_topics.active h3 {
         font-size: 20px;
         line-height: 30px;
-        margin: 40px 20px 15px 40px;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 20px;
+        margin-bottom: 15px;
     }
     .item_11 .overlay_topics.active p,
     .item_21 .overlay_topics.active p,
@@ -269,7 +298,19 @@
     .item_61 .overlay_topics.active p {
         font-size: 16px;
         line-height: 25px;
-        margin: 0px 20px 30px 40px;
+        margin-left: 40px;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+    .item_12 .overlay_posts h3,
+    .item_62 .overlay_posts h3,
+    .item_14 .overlay_posts h3,
+    .item_64 .overlay_posts h3,
+    .item_13 .overlay_posts h3,
+    .item_31 .overlay_topics h3,
+    .item_41 .overlay_topics h3 {
+        margin-top: 40px;
+        margin-left: 50px;
     }
     .item_11 .overlay_topics h3,
     .item_21 .overlay_topics h3,
@@ -288,7 +329,23 @@
     .item_43 .overlay_posts h3 {
         font-size: 20px;
         line-height: 30px;
-        margin: 40px 20px 15px 40px;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 30px;
+        margin-bottom: 15px;
+    }
+    .item_12 .overlay_posts p,
+    .item_62 .overlay_posts p,
+    .item_14 .overlay_posts p,
+    .item_64 .overlay_posts p,
+    .item_13 .overlay_posts p,
+    .item_62 .overlay_posts p,
+    .item_31 .overlay_topics p,
+    .item_41 .overlay_topics p {
+        margin-top: 30px;
+        margin-right: 132px;
+        margin-bottom: 30px;
+        margin-left: 50px;
     }
     .item_11 .overlay_topics p,
     .item_21 .overlay_topics p,
@@ -307,7 +364,9 @@
     .item_43 .overlay_posts p {
         font-size: 16px;
         line-height: 25px;
-        margin: 0px 20px 30px 40px;
+        margin-left: 40px;
+        margin-right: 20px;
+        margin-bottom: 30px;
     }
     .item_12 .overlay_posts.active h3,
     .item_14 .overlay_posts.active h3,
@@ -315,7 +374,10 @@
     .item_62 .overlay_posts.active h3 {
         font-size: 20px;
         line-height: 30px;
-        margin: 40px 30px 30px 30px;
+        margin-top: 40px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
     }
     .item_22 .overlay_posts.active h3,
     .item_32 .overlay_posts.active h3,
@@ -330,7 +392,10 @@
     .item_43 .overlay_posts.active h3 {
         font-size: 20px;
         line-height: 30px;
-        margin: 30px 20px 54px 25px;
+        margin-top: 30px;
+        margin-left: 25px;
+        margin-right: 20px;
+        margin-bottom: 54px;
     }
     .item_12 .overlay_posts.active p,
     .item_14 .overlay_posts.active p,
@@ -338,7 +403,9 @@
     .item_62 .overlay_posts.active p {
         font-size: 16px;
         line-height: 25px;
-        margin: 0px 30px 30px 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-bottom: 30px;
     }
     .item_53 p {
         font-size: 35px;
@@ -364,43 +431,56 @@
     want design
 */
     .want_design {
-        padding: 0;
-        margin-bottom: 150px;
+        padding: 0 60px;
+        margin-bottom: 156px;
         height: 520px;
     }
     .want_design.active {
         width: 1140px;
-        height: 700px;
+        height: 650px;
     }
-    .want_design_body {
+    .want_design_body{
         max-width: 1800px;
     }
     .want_design_body.active {
         padding-left: 90px;
     }
     .want_design_body_title h3 {
+        margin-top: 90px;
+        margin-bottom: 50px;
+        margin-left: 153px;
+        margin-right: 50px;
         font-size: 50px;
         line-height: 65px;
-        margin: 90px 50px 50px 153px;
+        width: 580px;
     }
     .want_design_body_title.active h3 {
-        font-size: 30px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        margin-right: 102px;
+        font-size: 35px;
         line-height: 45px;
-        margin: 60px 102px 10px 0px;
+        width: 828px;
     }
     .want_design_body_title p {
         margin-left: 153px;
         margin-right: 50px;
+        width: 580px;
     }
     .want_design_body_title.active p {
-        margin-left: 0;
         margin-right: 118px;
         font-size: 20px;
         line-height: 30px;
+        width: 828px;
     }
     .want_design_body_form {
-        padding-top: 83px;
-        padding-left: 104px;
+        padding-left: 94px;
+    }
+    #fldName_label {
+        top: 83px;
+    }
+    #fldName_label.active {
+        top: 30px;
     }
     .want_design_form .input_name,
     .want_design_form .input_phone {
@@ -412,12 +492,15 @@
         height: 60px;
     }
     .want_design_form .input_name {
-        margin-bottom: 58px;
+        margin-top: 113px;
+    }
+    .want_design_form .input_name.active {
+        margin-top: 60px;
     }
     .want_design_form .input_phone {
         margin-bottom: 35px;
     }
-    .want_design_form p {
+    .want_design_form .legal {
         font-size: 16px;
         line-height: 30px;
         margin-bottom: 30px;
@@ -426,6 +509,7 @@
         width: 220px;
         height: 60px;
     }
+
 /*
     articles
 */
