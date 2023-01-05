@@ -139,7 +139,29 @@ jQuery(function ($) {
     });
 
     // to send form
-    $(".want_design_form_button").on("click", function (event){
+        /*$('.want_design_form_button').click( function() {
+            var form = $(this).closest('form');
+           //if ( form.valid() ) {
+                form.css('opacity','.5');
+                $.ajax({
+                    url: "/wp-admin/admin-ajax.php",
+                    //type: 'post',
+                    dataType: 'html',
+                    data: form.serialize(),
+                    action: 'ajax_order',
+                    success: function(data) {
+                        form.html(data);
+                        form.css('opacity','1');
+                        //form.find('.status').html('форма отправлена успешно');
+                        //$('#myModal').modal('show') // для бутстрапа
+                    },
+                    error: function() {
+                        form.find('.status').html('серверная ошибка');
+                    }
+                });
+            //}
+        });*/
+        $(".want_design_form_button").on("click", function (event){
         event.preventDefault();
         var name = $('.input_name').val();
         var tel = $('.input_phone').val();
@@ -165,7 +187,7 @@ jQuery(function ($) {
                 }
             },
             error: function (response) {
-                $('#notify').addClass('error');
+                $('#notify').addClass('success');
                 $('#notify').css('display', 'block');
                 $('#notify').html(response);
             }

@@ -658,6 +658,9 @@ ul {
     margin-top: calc(80px + (110 - 80) * ((100vw - 1300px) / (1920 - 1300)));
     margin-bottom: calc(10px + (28 - 10) * ((100vw - 1300px) / (1920 - 1300)));
 }
+.items_3.active {
+    margin-bottom: calc(80px + (110 - 80) * ((100vw - 1300px) / (1920 - 1300)));
+}
 .items_2 .item_12 {
     grid-area: item_12;
     overflow: hidden;
@@ -1114,16 +1117,10 @@ ul {
 }
 #fldName_label.active {
     top: calc(17px + (30 - 17) * ((100vw - 1300px) / (1920 - 1300)));
-    font-size: 14px;
-    line-height: 40px;
 }
 #fldPhone_label {
     top: -29px;
     left: 0;
-}
-#fldPhone_label.active {
-    font-size: 14px;
-    line-height: 20px;
 }
 .want_design_form .input_name,
 .want_design_form .input_phone {
@@ -1155,10 +1152,11 @@ ul {
     font-size: calc(14px + (16 - 14) * ((100vw - 1300px) / (1920 - 1300)));
     line-height: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
     margin-bottom: calc(45px + (30 - 45) * ((100vw - 1300px) / (1920 - 1300)));
+    width: calc(476px + (609 - 476) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .want_design_form .legal.active {
     margin-bottom: 35px;
-    width: 500px;
+    width: calc(432px + (609 - 432) * ((100vw - 1300px) / (1920 - 1300)));
 }
 #notify {
     display: none;
@@ -1166,9 +1164,16 @@ ul {
 .error {
     font-weight: 600;
     position: absolute;
-    top: 91px;
-    right: 146px;
+    top: calc(161px + (193 - 161) * ((100vw - 1300px) / (1920 - 1300)));
+    right: calc(102px + (155 - 102) * ((100vw - 1300px) / (1920 - 1300)));
     color: #ff0000;
+}
+.success {
+    font-weight: 600;
+    position: absolute;
+    top: calc(161px + (193 - 161) * ((100vw - 1300px) / (1920 - 1300)));
+    right: calc(102px + (155 - 102) * ((100vw - 1300px) / (1920 - 1300)));
+    color: #000000;
 }
 .want_design_form_button {
     display: flex;

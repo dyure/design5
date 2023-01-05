@@ -129,8 +129,6 @@
 
 <?php get_template_part('inc/want_design'); ?>
 
-<?php get_template_part('inc/articles'); ?>
-
 <?php get_footer(); ?>
 
 </body>

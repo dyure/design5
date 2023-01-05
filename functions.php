@@ -121,6 +121,15 @@
     add_action('wp_ajax_ajax_order', 'ajax_form');
 
     function ajax_form(){
+        /*$name = $_POST['name'];
+        $phone = $_POST['phone'];
+        $to = "sobranieinfo@yandex.ru"; 
+        $from = "sobranieinfo@yandex.ru";
+        $subject = "Заявка c сайта";
+        $msg = "Имя: " . $name . ", Телефон: " . $phone;
+        mail($to, $subject, $msg, $from);
+        echo '<p>Привет, форма отправлена</p>';*/
+
         $name = $_REQUEST['name'];
         $tel = $_REQUEST['tel'];
         $int_tel = preg_replace("/[^0-9]/", '', $tel);
