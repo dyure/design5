@@ -10,9 +10,15 @@
 /*
     header
 */
+    .header {
+        padding: 0 60px;
+    }
     .header__body {
         height: 116px;
         max-width: 1800px;
+    }
+    .header__logo_phone.active {
+        width: 65%; /*1088px;*/
     }
     .header__logo {
         width: 96px;
@@ -20,19 +26,20 @@
     .header__logo img {
         width: 63px;
     }
-    .header__logo_phone.active {
-        width: 65%;
-    }
     .header__phone {
         font-size: 20px;
         line-height: 30px;
     }
     .header__phone.active {
-        margin-right: 111px;
+        margin-right: 69px;
     }
     .header__burger {
         width: 68px;
         height: 68px;
+    }
+    .header__burger.active {
+        top: 24px;
+        right: 60px;
     }
     .header__burger_lines {
         width: 41px;
@@ -64,21 +71,14 @@
     }
     .header__menu_body {
         padding-left: 90px;
-        padding-right: 90px;
+        padding-right: 60px;
     }
     .header__menu_menu {
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
     .menu_left,
     .menu_right {
         width: 290px;
-    }
-    .header__menu.active {
-        width: 760px;
-    }
-    .menu_left_list li,
-    .menu_right_list li {
-        margin-bottom: 20px;
     }
     .menu_features_list li {
         font-size: 35px;
@@ -88,14 +88,13 @@
     .header__menu_order {
         width: 630px;
     }
-    .header__menu_order_phone {
-        font-size: 35px;
-        line-height: 45px;
-        margin-bottom: 28px;
-    }
     .header__menu_order_text p {
         font-size: 16px;
         line-height: 30px;
+    }
+    .header__menu_order_phone {
+        font-size: 35px;
+        line-height: 45px;
         margin-bottom: 28px;
     }
     .header__menu_order_socials {
@@ -103,25 +102,28 @@
         font-size: 20px;
         line-height: 35px;
     }
+    .header__menu_order_socials_vk img,
+    .header__menu_order_socials_telegram img,
+    .header__menu_order_socials_whatsapp img,
+    .header__menu_order_socials_email img {
+        width: 30px;
+    }
 /*
     content
 */
     .content {
+        padding: 0 60px;
         margin-top: 116px;
-        padding: 0;
-    }
-    .content__body {
-        max-width: 1800px;
     }
     .content.active {
         width: 1140px;
     }
+    .content__body {
+        width: 1800px;
+    }
     .content__body_title {
         font-size: 50px;
         line-height: 65px;
-    }
-    .content__body p {
-        margin: 80px 0;
     }
     .content__body_single {
         margin-bottom: 150px;
@@ -137,12 +139,12 @@
     anonce
 */
     .anonce {
-        margin-top: 43px;
-        margin-bottom: 80px;
+        margin-top: 30px;
+        margin-bottom: 100px;
     }
     .anonce.active {
-        padding-top: 65px;
-        padding-bottom: 0;
+        margin-top: 30px;
+        margin-bottom: 80px;
     }
     .anonce__text {
         width: 918px;
@@ -150,53 +152,62 @@
     .anonce__text.active {
         width: 560px;
     }
-    .anonce__text h2,
-    .misc_field_1 h2 {
+    .anonce__text h2 {
         font-size: 50px;
         line-height: 65px;
         margin-bottom: 30px;
     }
-    .anonce__text.active h2,
-    .misc_field_1.active h2 {
-        font-size: 35px;
-        line-height: 45px;
-        margin-bottom: 30px;
-    }
-    .misc_field_1,
-    .anonce__add {
-        width: 1341px;
-    }
-    .anonce__add p {
-        font-weight: 600;
-        font-size: 18x;
-        line-height: 25px;
-    }
-    .misc_field_1.active,
-    .anonce__add.active {
-        width: 900px;
-    }
-    .anonce__text.active h2,
-    .misc_field_1.active h2 {
+    .anonce__text.active h2 {
         font-size: 35px;
         line-height: 45px;
         margin-bottom: 15px;
     }
     .anonce__video {
-        margin-right: 102px;
         width: 587px;
+        margin-right: 102px;
     }
     .anonce__video.active {
-        margin-right: 0;
-        width: 393px ;
+        width: 420px;
     }
     .anonce__video video {
         width: 587px;
-        height: 587px;
     }
     .anonce__video.active video {
         width: 393px;
         height: 393px;
     }
+    .anonce__add {
+        width: 1341px;
+    }
+    .anonce__add.active {
+        width: 900px;
+    }
+    .anonce__add.active p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .misc_field_1 {
+        width: 1341px;
+    }
+    .misc_field_1.active {
+        width: 1020px;
+    }
+    .misc_field_1 h2 {
+        font-size: 50px;
+        line-height: 65px;
+        margin-bottom: 50px;
+    }
+    .misc_field_1.active h2 {
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 30px;
+    }
+    .misc_field_1.active p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+
 /*
     grid
 */

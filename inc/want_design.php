@@ -18,10 +18,10 @@
                 </div>
                 <p class="legal">Нажимая кнопку вы даете согласие на обработку персональных данных</p>
                 <div>
-                    <button class="want_design_form_button" type="button" value="Отправить">
+                    <input class="want_design_form_button" type="button" value="Отправить">
                 </div>
-                <div class="status"></div>
             </form>
+        <div id="notify_2"></div>
         </div>
     </div>
 </div>
