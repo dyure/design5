@@ -121,15 +121,6 @@
     add_action('wp_ajax_ajax_order', 'ajax_form');
 
     function ajax_form(){
-        /*$name = $_POST['name'];
-        $phone = $_POST['phone'];
-        $to = "sobranieinfo@yandex.ru"; 
-        $from = "sobranieinfo@yandex.ru";
-        $subject = "Заявка c сайта";
-        $msg = "Имя: " . $name . ", Телефон: " . $phone;
-        mail($to, $subject, $msg, $from);
-        echo '<p>Привет, форма отправлена</p>';*/
-
         $name = $_REQUEST['name'];
         $tel = $_REQUEST['tel'];
         $int_tel = preg_replace("/[^0-9]/", '', $tel);
@@ -145,12 +136,12 @@
     // Отправляем почтовое сообщение
         if ($len_tel == 11) {
             if (mail($mail_to, $thm, $msg, $headers)) {
-                $response = 'ваша заявка принята';
+                $response = 'Ваша заявка принята';
             } else {
-                $response = 'ошибка при отправке';
+                $response = 'Ошибка при отправке';
             }
         } else {
-           $response = 'заполните корректно данные!';
+           $response = 'заполните корректно данные';
         }
     // Сообщение о результате отправки почты
         if (defined('DOING_AJAX') && DOING_AJAX) {
