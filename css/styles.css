@@ -157,7 +157,7 @@ ul {
 }
 .header__phone.active {
     margin-top: 0;
-    margin-right: calc(0px + (64 - 0) * ((100vw - 1300px) / (1920 - 1300)));
+    margin-right: calc(3px + (69 - 3) * ((100vw - 1300px) / (1920 - 1300)));
 }
 
 /* внешний контейнер бургера */
@@ -1152,21 +1152,46 @@ ul {
     font-size: calc(14px + (16 - 14) * ((100vw - 1300px) / (1920 - 1300)));
     line-height: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
     margin-bottom: calc(45px + (30 - 45) * ((100vw - 1300px) / (1920 - 1300)));
+<<<<<<< HEAD
     width: 828px;
 }
 .want_design_form .legal.active {
     margin-bottom: 31px;
     width: calc(432px + (828 - 432) * ((100vw - 1300px) / (1920 - 1300)));
+=======
+    width: calc(476px + (609 - 476) * ((100vw - 1300px) / (1920 - 1300)));
 }
-#notify {
+.want_design_form .legal.active {
+    margin-bottom: 35px;
+    width: calc(432px + (609 - 432) * ((100vw - 1300px) / (1920 - 1300)));
+>>>>>>> ccc31eeaaa8c3c9a4a6e720ac6a597008d43609c
+}
+#notify,
+#notify_2 {
     display: none;
 }
 .error {
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
     position: absolute;
-    top: 91px;
-    right: 146px;
+    top: calc(156px + (190 - 156) * ((100vw - 1300px) / (1920 - 1300)));
+    right: calc(102px + (163 - 102) * ((100vw - 1300px) / (1920 - 1300)));
     color: #ff0000;
+}
+.error.active {
+    font-size: calc(14px + (16 - 14) * ((100vw - 1300px) / (1920 - 1300)));
+    line-height: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
+    top: calc(118px + (136 - 118) * ((100vw - 1300px) / (1920 - 1300)));
+    right: calc(135px + (287 - 135) * ((100vw - 1300px) / (1920 - 1300)));
+}
+#notify_2 {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-weight: 600;
+    font-size: calc(35px + (50 - 35) * ((100vw - 1300px) / (1920 - 1300)));
+    line-height: calc(45px + (65 - 45) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .want_design_form_button {
     display: flex;
@@ -1174,9 +1199,9 @@ ul {
     align-items: center;
     width: 220px;
     height: 60px;
-    border: 1px solid #efeef2;
-    background-color: #78777e;
-    color: #ffffff;
+    border: 1px solid #78777e;
+    background-color: #f5f4f5;
+    color: #78777e;
     font-weight: 600;
     font-size: 20px;
     line-height: 35px;
@@ -1184,21 +1209,11 @@ ul {
     transition: 1000ms;
     padding-bottom: 2px;
 }
-.want_design_form_button:disabled,
-.want_design_form_button:disabled:hover {
-    cursor: unset;
-    border: 1px solid #78777e;
-    background-color: unset;
-    color: unset;
-}
-.want_design_form_button {
-    border: 1px solid #efeef2;
-}
-.want_design_form_button:hover {
+/*.want_design_form_button:hover {
     border: 1px solid #78777e;
     background-color: #78777e;
     color: #ffffff;
-}
+}*/
 .want_design_form_button.active {
     width: calc(180px + (220 - 180) * ((100vw - 1300px) / (1920 - 1300)));
     height: calc(50px + (60 - 50) * ((100vw - 1300px) / (1920 - 1300)));
@@ -1287,47 +1302,47 @@ ul {
 
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 0 calc(40px + (60 - 40) * ((100vw - 1300px) / (1920 - 1300)));
     width: 100%;
     transition: 1000ms;
 }
-.footer.active {
-    width: calc(706px + (1140 - 706) * ((100vw - 1300px) / (1920 - 1300)));
+.footer__line {
+    border-top: 2px solid #29272f;
+    width: calc(1220px + (1800 - 1220) * ((100vw - 1300px) / (1920 - 1300)));
+    height: 2px;
+}
+.footer__line.active {
+    width: calc(626px + (1020 - 626) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .footer__body {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: calc(132px + (140 - 132) * ((100vw - 1300px) / (1920 - 1300)));
-    padding-top: 70px;
-    width: 100%;
-    max-width: 1920px;
-    border-top: 2px solid #29272f;
+    margin-bottom: 73px;
+    padding-top: 60px;
+    width: calc(880px + (1140 - 880) * ((100vw - 1300px) / (1920 - 1300)));
+}
+.footer__body.active {
+    width: calc(626px + (760 - 626) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .footer__logo {
     margin-top: -8px;
-    margin-right: calc(130px + (210 - 130) * ((100vw - 1300px) / (1920 - 1300)));
     transition: 1000ms;
 }
-.footer__logo.active {
-    margin-top: -8px;
-    margin-right: calc(50px + (163 - 50) * ((100vw - 1300px) / (1920 - 1300)));
+.footer__body.active .footer__logo {
+    display: none;
 }
 .footer__logo img {
     width: 63px;
     height: auto;
 }
-.footer__features_menu_phone {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: calc(662px + (820 - 662) * ((100vw - 1300px) / (1920 - 1300)));
+.footer__features {
     transition: 1000ms;
 }
-.footer__features_menu_phone.active {
-    width: calc(599px + (699 - 599) * ((100vw - 1300px) / (1920 - 1300)));
-    margin-right: 0;
+.footer__menu {
+    transition: 1000ms;
 }
 .footer__lists li {
     font-weight: 500;
@@ -1351,29 +1366,11 @@ ul {
 #footer__lists_contacts:hover {
     text-decoration: underline;
 }
-.footer__features {
-    /*margin-right: calc(101px + (152 - 101) * ((100vw - 1300px) / (1920 - 1300)));*/
-    margin-right: calc(66px + (129 - 66) * ((100vw - 1300px) / (1920 - 1300)));
-    transition: 1000ms;
-}
-.footer__features.active {
-    margin-right: calc(36px + (108 - 36) * ((100vw - 1300px) / (1920 - 1300)));
-}
-.footer__menu {
-    margin-right: calc(113px + (200 - 113) * ((100vw - 1300px) / (1920 - 1300)));
-    transition: 1000ms;
-}
-.footer__menu.active {
-    margin-right: calc(29px + (130 - 29) * ((100vw - 1300px) / (1920 - 1300)));
-}
 .footer__phone {
     font-weight: 600;
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 30px;
-}
-.footer__phone.active {
-    font-size: 15px;
 }
 .footer__socials {
     display: flex;
@@ -1391,4 +1388,15 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
+}
+.footer__legal {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    color: #78777E;
+    margin-bottom: 25px;
+    width: calc(1220px + (1800 - 1220) * ((100vw - 1300px) / (1920 - 1300)));
+}
+.footer__legal.active {
+    width: calc(626px + (1020 - 626) * ((100vw - 1300px) / (1920 - 1300)));
 }

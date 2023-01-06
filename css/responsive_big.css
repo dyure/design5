@@ -1,5 +1,6 @@
 @media screen and (min-width: 1921px) {
 /*
+    the comment just to create new commit
     order button
 */
     .order_button {
@@ -10,9 +11,15 @@
 /*
     header
 */
+    .header {
+        padding: 0 60px;
+    }
     .header__body {
         height: 116px;
         max-width: 1800px;
+    }
+    .header__logo_phone.active {
+        width: 65%; /*1088px;*/
     }
     .header__logo {
         width: 96px;
@@ -20,19 +27,20 @@
     .header__logo img {
         width: 63px;
     }
-    .header__logo_phone.active {
-        width: 65%;
-    }
     .header__phone {
         font-size: 20px;
         line-height: 30px;
     }
     .header__phone.active {
-        margin-right: 111px;
+        margin-right: 69px;
     }
     .header__burger {
         width: 68px;
         height: 68px;
+    }
+    .header__burger.active {
+        top: 24px;
+        right: 60px;
     }
     .header__burger_lines {
         width: 41px;
@@ -64,21 +72,14 @@
     }
     .header__menu_body {
         padding-left: 90px;
-        padding-right: 90px;
+        padding-right: 60px;
     }
     .header__menu_menu {
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
     .menu_left,
     .menu_right {
         width: 290px;
-    }
-    .header__menu.active {
-        width: 760px;
-    }
-    .menu_left_list li,
-    .menu_right_list li {
-        margin-bottom: 20px;
     }
     .menu_features_list li {
         font-size: 35px;
@@ -88,14 +89,13 @@
     .header__menu_order {
         width: 630px;
     }
-    .header__menu_order_phone {
-        font-size: 35px;
-        line-height: 45px;
-        margin-bottom: 28px;
-    }
     .header__menu_order_text p {
         font-size: 16px;
         line-height: 30px;
+    }
+    .header__menu_order_phone {
+        font-size: 35px;
+        line-height: 45px;
         margin-bottom: 28px;
     }
     .header__menu_order_socials {
@@ -103,26 +103,41 @@
         font-size: 20px;
         line-height: 35px;
     }
+    .header__menu_order_socials_vk img,
+    .header__menu_order_socials_telegram img,
+    .header__menu_order_socials_whatsapp img,
+    .header__menu_order_socials_email img {
+        width: 30px;
+    }
 /*
     content
 */
     .content {
         padding: 0 60px;
         margin-top: 116px;
+<<<<<<< HEAD
     }
     .content__body {
         max-width: 1800px;
+=======
+>>>>>>> ccc31eeaaa8c3c9a4a6e720ac6a597008d43609c
     }
     .content.active {
         width: 1140px;
+    }
+    .content__body {
+        width: 1800px;
     }
     .content__body_title {
         font-size: 50px;
         line-height: 65px;
     }
+<<<<<<< HEAD
     .content__body_categories {
         max-width: 1800px;
     }
+=======
+>>>>>>> ccc31eeaaa8c3c9a4a6e720ac6a597008d43609c
     .content__body_single {
         margin-bottom: 150px;
     }
@@ -204,6 +219,11 @@
         font-size: 16px;
         line-height: 30px;
     }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ccc31eeaaa8c3c9a4a6e720ac6a597008d43609c
 /*
     grid
 */
