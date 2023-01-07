@@ -36,7 +36,7 @@
 */
 
     .header {
-        padding: 0 calc(40px + (50 - 30) * ((100vw - 700px) / (1299 - 700)));
+        padding: 0 calc(30px + (50 - 30) * ((100vw - 700px) / (1299 - 700)));
     }
     .header__body {
         height: calc(72px + (98 - 72) * ((100vw - 700px) / (1299 - 700)));
@@ -185,6 +185,7 @@
         justify-content: center;
         flex-direction: column-reverse;
         margin-top: calc(17px + (20 - 17) * ((100vw - 700px) / (1299 - 700)));
+        margin-bottom: 70px;
     }
     .anonce__video {
         display: flex;
@@ -204,7 +205,7 @@
     .anonce__text h2 {
         font-size: 35px;
         line-height: 45px;
-        margin-bottom: calc(15px + (30 - 15) * ((100vw - 700px) / (1299 - 700)));
+        margin-bottom: 15px;
     }
     .anonce__add {
         width: 100%;
@@ -220,6 +221,7 @@
         font-size: calc(20px + (35 - 20) * ((100vw - 700px) / (1299 - 700)));
         line-height: calc(30px + (45 - 30) * ((100vw - 700px) / (1299 - 700)));
         margin-bottom: calc(20px + (40 - 20) * ((100vw - 700px) / (1299 - 700)));
+        margin-top: -80px;
     }
     .misc_field_1 p {
         font-size: calc(14px + (16 - 14) * ((100vw - 700px) / (1299 - 700)));
@@ -309,6 +311,9 @@
     .desc {
         margin-bottom: calc(50px + (60 - 50) * ((100vw - 700px) / (1299 - 700)));
     }
+    .desc:last-child {
+        margin-bottom: 0;
+    }
     .desc h3 {
         font-weight: 600;
         font-size: calc(16px + (20 - 16) * ((100vw - 700px) / (1299 - 700)));
@@ -323,6 +328,7 @@
     }
     .desc_pa {
         margin-top: 15px;
+        margin-bottom: 80px;
     }
     .desc_pa a {
         font-weight: 600;
@@ -687,21 +693,22 @@
     .anonce__text h2 {
         font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (699 - 320)));
         line-height: calc(25px + (30 - 25) * ((100vw - 320px) / (699 - 320)));
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .anonce__add p {
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (699 - 320)));
         line-height: calc(20px + (30 - 20) * ((100vw - 320px) / (699 - 320)));
     }
     .misc_field_1 h2 {
-        font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (699 - 320)));
-        line-height: calc(25px + (30 - 25) * ((100vw - 320px) / (699 - 320)));
-        margin-bottom: calc(15px + (20 - 15) * ((100vw - 320px) / (699 - 320)));
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 15px;
+        margin-top: -50px;
     }
     .misc_field_1 p {
         font-size: 14px;
         line-height: 20px;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
     }
     .content__body_title {
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (699 - 320)));
@@ -814,6 +821,7 @@
     }
     .desc_pa {
         margin-top: 15px;
+        margin-bottom: 50px;
     }
     .desc_pa a {
         font-weight: 600;

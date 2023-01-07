@@ -597,23 +597,27 @@
         padding: unset;
         width: 1020px;
     }
-    .footer__body_body {
-        max-width: 1800px;
-    }
     .footer__line {
         width: 1800px;
+        display: flex;
+        align-self: center;
     }
     .footer__line.active {
         width: 1020px;
     }
     .footer__body {
         width: 1140px;
+        align-self: center;
+        margin-left: -647px;
     }
     .footer__body.active {
-        width: 760px;
+        width: 1020px;
+        margin-left: 0;
     }
     .footer__legal {
         width: 1800px;
+        display: flex;
+        align-self: center;
     }
     .footer__legal.active {
         width: 1020px;

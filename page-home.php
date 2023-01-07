@@ -93,7 +93,7 @@
                     </a>
                     <div class="description">
                         <div class="description_body">
-                            <p><?php echo get_the_title(); ?></p>
+                            <p><?php echo mb_substr(get_the_excerpt(), 0, 50); ?></p>
                         </div>
                     </div>
                 </div>
