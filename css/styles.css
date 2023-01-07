@@ -159,7 +159,6 @@ ul {
     margin-top: 0;
     margin-right: calc(3px + (69 - 3) * ((100vw - 1300px) / (1920 - 1300)));
 }
-
 /* внешний контейнер бургера */
 .header__burger {
     z-index: 3;
@@ -211,7 +210,6 @@ ul {
     border-bottom: calc(5px + (6 - 5) * ((100vw - 1300px) / (1920 - 1300))) solid #29272f;
     transition: 1000ms;
 }
-
 /* поведение линий бургера при наведении мыши после нажатия */
 .header__burger:hover .header__burger_lines.active:before {
     width: calc(34px + (41 - 34) * ((100vw - 1300px) / (1920 - 1300)));
@@ -1152,19 +1150,11 @@ ul {
     font-size: calc(14px + (16 - 14) * ((100vw - 1300px) / (1920 - 1300)));
     line-height: calc(20px + (30 - 20) * ((100vw - 1300px) / (1920 - 1300)));
     margin-bottom: calc(45px + (30 - 45) * ((100vw - 1300px) / (1920 - 1300)));
-<<<<<<< HEAD
-    width: 828px;
-}
-.want_design_form .legal.active {
-    margin-bottom: 31px;
-    width: calc(432px + (828 - 432) * ((100vw - 1300px) / (1920 - 1300)));
-=======
     width: calc(476px + (609 - 476) * ((100vw - 1300px) / (1920 - 1300)));
 }
 .want_design_form .legal.active {
     margin-bottom: 35px;
     width: calc(432px + (609 - 432) * ((100vw - 1300px) / (1920 - 1300)));
->>>>>>> ccc31eeaaa8c3c9a4a6e720ac6a597008d43609c
 }
 #notify,
 #notify_2 {
@@ -1209,11 +1199,6 @@ ul {
     transition: 1000ms;
     padding-bottom: 2px;
 }
-/*.want_design_form_button:hover {
-    border: 1px solid #78777e;
-    background-color: #78777e;
-    color: #ffffff;
-}*/
 .want_design_form_button.active {
     width: calc(180px + (220 - 180) * ((100vw - 1300px) / (1920 - 1300)));
     height: calc(50px + (60 - 50) * ((100vw - 1300px) / (1920 - 1300)));

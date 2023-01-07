@@ -88,9 +88,9 @@ jQuery(function ($) {
     $('.header__burger,.order_button,#footer__lists_contacts').click (function(event){
         $('.header').removeClass('out');
         var my_works_width_input = document.documentElement.clientWidth;
-        var new_margin = (my_works_width_input - 1920) / 2;
+        var new_margin = (my_works_width_input - 1800) / 2;
         if (my_works_width_input >= 1300) {
-            $('.header__burger,.header__burger_lines,.header__logo_phone,.header__phone,.header__menu,.content,.croped,.items_1,.items_2,.items_3,.items_4,.item_53,.overlay_topics,.overlay_posts,.topic_name,.anonce,.anonce__text,.anonce__add,.anonce__video,.misc_field_1,.want_design,.want_design_body,.want_design_body_title,.want_design_body_form,.input_name,#fldName_label,.input_phone,#fldPhone_label,#notify,.legal,.want_design_form_button,.articles,.footer__line,.footer__body,.footer__legal,.order_button').toggleClass('active');
+            $('.header__burger,.header__burger_lines,.header__logo_phone,.header__phone,.header__menu,.content,.croped,.items_1,.items_2,.items_3,.items_4,.item_53,.overlay_topics,.overlay_posts,.topic_name,.anonce,.anonce__text,.anonce__add,.anonce__video,.misc_field_1,.want_design,.want_design_body,.want_design_body_title,.want_design_body_form,.input_name,#fldName_label,.input_phone,#fldPhone_label,#notify,.legal,.want_design_form_button,.articles,.footer,.footer__line,.footer__body,.footer__legal,.order_button').toggleClass('active');
         } else {
             $('.header__burger,.header__burger_lines,.header__menu').toggleClass('active');
         }
@@ -109,7 +109,7 @@ jQuery(function ($) {
     // alternative method to close mobile menu
     $('.content').click(function(e) {
         if ($('.header__menu').hasClass('active')) {
-            $('.header__burger,.header__burger_lines,.header__logo_phone,.header__phone,.header__menu,.content,.croped,.items_1,.items_2,.items_3,.items_4,.item_53,.overlay_topics,.overlay_posts,.topic_name,.anonce,.anonce__text,.anonce__add,.anonce__video,.misc_field_1,.want_design,.want_design_body,.want_design_body_title,.want_design_body_form,.input_name,#fldName_label,.input_phone,#fldPhone_label,#notify,.legal,.want_design_form_button,.articles,.footer__line,.footer__body,.footer__legal,.order_button').removeClass('active');
+            $('.header__burger,.header__burger_lines,.header__logo_phone,.header__phone,.header__menu,.content,.croped,.items_1,.items_2,.items_3,.items_4,.item_53,.overlay_topics,.overlay_posts,.topic_name,.anonce,.anonce__text,.anonce__add,.anonce__video,.misc_field_1,.want_design,.want_design_body,.want_design_body_title,.want_design_body_form,.input_name,#fldName_label,.input_phone,#fldPhone_label,#notify,.legal,.want_design_form_button,.articles,.footer,.footer__line,.footer__body,.footer__legal,.order_button').removeClass('active');
             $('.content, .want_design, .footer').css('margin-left','0');
             $('.header__burger').css('margin-right','0');
         }
