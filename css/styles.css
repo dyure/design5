@@ -1154,7 +1154,7 @@ ul {
 }
 .want_design_form .legal.active {
     margin-bottom: 35px;
-    width: calc(432px + (609 - 432) * ((100vw - 1300px) / (1920 - 1300)));
+    width: calc(432px + (680 - 432) * ((100vw - 1300px) / (1920 - 1300)));
 }
 #notify,
 #notify_2 {

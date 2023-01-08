@@ -364,7 +364,7 @@
     .want_design {
         padding: 0 calc(30px + (50 - 30) * ((100vw - 700px) / (1299 - 700)));
         margin-bottom: calc(50px + (80 - 50) * ((100vw - 700px) / (1299 - 700)));
-        height: calc(690px + (626 - 690) * ((100vw - 700px) / (1299 - 700)));
+        height: calc(626px + (690 - 626) * ((100vw - 700px) / (1299 - 700)));
     }
     .want_design_body {
         width: 100%;
@@ -376,6 +376,7 @@
         width: 100%;
     }
     .want_design_body_title h3 {
+        width: calc(570px + (1100 - 570) * ((100vw - 700px) / (1299 - 700)));
         margin-top: 50px;
         margin-bottom: 30px;
         margin-left: 50px;
@@ -384,9 +385,10 @@
         line-height: 45px;
     }
     .want_design_body_title p {
+        width: calc(570px + (1100 - 570) * ((100vw - 700px) / (1299 - 700)));
         margin-left: 50px;
         margin-right: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         font-size: 20px;
         line-height: 30px;
     }
@@ -394,9 +396,15 @@
         padding-top: 0;
         padding-left: 0;
     }
-    .want_design_form label {
-        top: -27px;
-        left: 50px;
+    #fldName_label {
+        top: -29px;
+        left: 48px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    #fldPhone_label {
+        top: -29px;
+        left: 48px;
         font-size: 16px;
         line-height: 30px;
     }
@@ -404,17 +412,25 @@
     .want_design_form .input_phone {
         margin-left: 50px;
         margin-bottom: 40px;
-        width: calc(470px + (753 - 470) * ((100vw - 700px) / (1299 - 700)));
+        width: calc(570px + (1100 - 570) * ((100vw - 700px) / (1299 - 700)));
         height: 52px;
         font-size: 20px;
         line-height: 30px;
         padding-left: 30px;
+        margin-top: 0;
     }
-    .want_design_form p {
+    .want_design_form .legal {
+        width: 100%;
         font-size: 14px;
         line-height: 20px;
         margin-bottom: 40px;
         margin-left: 50px;
+    }
+    .error {
+        font-size: 14px;
+        line-height: 20px;
+        top: calc(115px + (148 - 115) * ((100vw - 700px) / (1299 - 700)));
+        right: calc(22px + (50 - 22) * ((100vw - 700px) / (1299 - 700)));
     }
     .want_design_form_button {
         margin-left: 50px;
@@ -422,10 +438,6 @@
         height: calc(52px + (60 - 52) * ((100vw - 700px) / (1299 - 700)));
         font-size: 20px;
         line-height: 30px;
-    }
-    .want_design_form_button:hover {
-        background-color: #f5f4f5;
-        color: #29272f;
     }
 
 /*
@@ -489,26 +501,27 @@
     .footer {
         padding: 0 calc(30px + (50 - 30) * ((100vw - 700px) / (1299 - 700)));
     }
+    .footer__line {
+        width: 100%;
+    }
     .footer__body {
-        height: calc(447px + (507 - 447) * ((100vw - 700px) / (1299 - 700)));
+        height: 100%;
         padding-top: calc(45px + (70 - 45) * ((100vw - 700px) / (1299 - 700)));
         max-width: 1299px;
         margin-bottom: 0;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 0;
     }
     .footer__logo {
         display: none;
     }
-    .footer__features_menu_phone {
+    .footer__features {
         width: 100%;
-        justify-content: unset;
         margin-right: 0;
     }
-    .footer__features {
-        width: calc(117px + (179 - 117) * ((100vw - 700px) / (1299 - 700)));
-        margin-right: calc(37px + (132 - 37) * ((100vw - 700px) / (1299 - 700)));
-    }
     .footer__menu {
-        margin-right: calc(54px + (128 - 54) * ((100vw - 700px) / (1299 - 700)));
+        margin-right: 0;
     }
     .footer__lists li {
         font-size: calc(14px + (16 - 14) * ((100vw - 700px) / (1299 - 700)));
@@ -522,6 +535,9 @@
     }
     .footer__socials{
         margin-bottom: calc(17px + (35 - 17) * ((100vw - 700px) / (1299 - 700)));
+    }
+    .footer__legal {
+        width: 100%;
     }
 }
 
@@ -862,23 +878,28 @@
     .want_design_body {
         width: 100%;
         max-width: 699px;
+        flex-direction: column;
     }
     .want_design_body_title h3 {
+        width: calc(270px + (559 - 270) * ((100vw - 320px) / (699 - 320)));
         margin-top: calc(25px + (50 - 25) * ((100vw - 320px) / (699 - 320)));
         margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (699 - 320)));
         margin-left: calc(15px + (40 - 15) * ((100vw - 320px) / (699 - 320)));
+        margin-right: calc(15px + (20 - 15) * ((100vw - 320px) / (699 - 320)));
         font-size: calc(20px + (35 - 20) * ((100vw - 320px) / (699 - 320)));
         line-height: calc(30px + (45 - 30) * ((100vw - 320px) / (699 - 320)));
     }
     .want_design_body_title p {
+        width: calc(270px + (559 - 270) * ((100vw - 320px) / (699 - 320)));
         margin-left: calc(15px + (40 - 15) * ((100vw - 320px) / (699 - 320)));
         margin-right: calc(15px + (40 - 15) * ((100vw - 320px) / (699 - 320)));
-        margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (699 - 320)));
+        margin-bottom: calc(43px + (60 - 43) * ((100vw - 320px) / (699 - 320)));
         font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (699 - 320)));
         line-height: calc(20px + (30 - 20) * ((100vw - 320px) / (699 - 320)));
     }
-    .want_design_form label {
-        top: -20px;
+    #fldName_label,
+    #fldPhone_label {
+        top: -29px;
         left: calc(15px + (40 - 15) * ((100vw - 320px) / (699 - 320)));
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (699 - 320)));
         line-height: calc(20px + (30 - 20) * ((100vw - 320px) / (699 - 320)));
@@ -893,12 +914,20 @@
         padding-left: calc(12px + (25 - 12) * ((100vw - 320px) / (699 - 320)));
     }
     .want_design_form .input_name {
+        margin-top: 0;
         margin-bottom: calc(38px + (40 - 38) * ((100vw - 320px) / (699 - 320)));
     }
     .want_design_form .input_phone {
         margin-bottom: calc(24px + (40 - 24) * ((100vw - 320px) / (699 - 320)));
     }
-    .want_design_form p {
+    .error {
+        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (699 - 320)));
+        line-height: 20px;
+        top: calc(51px + (68 - 51) * ((100vw - 320px) / (699 - 320)));
+        right: calc(16px + (40 - 16) * ((100vw - 320px) / (699 - 320)));
+    }
+    .want_design_form .legal {
+        width: 100%;
         font-size: calc(13px + (14 - 13) * ((100vw - 320px) / (699 - 320)));
         line-height: calc(20px + (20 - 20) * ((100vw - 320px) / (699 - 320)));
         margin-bottom: calc(15px + (40 - 15) * ((100vw - 320px) / (699 - 320)));
@@ -951,18 +980,19 @@
     .footer {
         padding: 0 calc(10px + (40 - 10) * ((100vw - 320px) / (699 - 320)));
     }
+    .footer__line {
+        width: 100%;
+    }
     .footer__body {
         height: 100%;
         padding-top: 45px;
         max-width: 699px;
-    }
-    .footer__logo {
-        display: none;
-    }
-    .footer__features_menu_phone {
         flex-direction: column;
         width: 100%;
         margin-right: 0;
+    }
+    .footer__logo {
+        display: none;
     }
     .footer__lists li {
         font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (699 - 320)));
@@ -970,6 +1000,7 @@
     }
     .footer__features {
         margin-right: 0;
+        width: 100%;
     }
     .footer__menu {
         margin-right: 0;
@@ -980,7 +1011,10 @@
         line-height: calc(30px + (45 - 30) * ((100vw - 320px) / (699 - 320)));
         margin-bottom: calc(30px + (40 - 30) * ((100vw - 320px) / (699 - 320)));
     }
-    .footer__socials{
+    .footer__socials {
         margin-bottom: calc(30px + (48 - 30) * ((100vw - 320px) / (699 - 320)));
+    }
+    .footer__legal {
+        width: 100%;
     }
 }
