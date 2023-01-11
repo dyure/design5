@@ -18,7 +18,7 @@
                 <?php the_content(); ?>
             </div>
             <div class="anonce__video">
-                <video autoplay="" loop="" muted="" src="https://blacksea.dm1tr11.ru/wp-content/uploads/2022/12/main_new.mp4" playsinline=""></video>
+                <video autoplay="" loop="" muted="" src="https://blacksea.dm1tr11.ru/wp-content/uploads/2022/12/main_new.mp4" playsinline="" poster="https://blacksea.dm1tr11.ru/wp-content/uploads/2023/01/poster.jpg"></video>
             </div>
         </div>
         <div class="anonce__add">
