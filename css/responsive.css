@@ -364,7 +364,7 @@
     .want_design {
         padding: 0 calc(30px + (50 - 30) * ((100vw - 700px) / (1299 - 700)));
         margin-bottom: calc(50px + (80 - 50) * ((100vw - 700px) / (1299 - 700)));
-        height: calc(626px + (690 - 626) * ((100vw - 700px) / (1299 - 700)));
+        height: calc(640px + (549 - 640) * ((100vw - 700px) / (1299 - 700)));
     }
     .want_design_body {
         width: 100%;
@@ -376,19 +376,18 @@
         width: 100%;
     }
     .want_design_body_title h3 {
-        width: calc(570px + (1100 - 570) * ((100vw - 700px) / (1299 - 700)));
+        width: calc(570px + (1065 - 570) * ((100vw - 700px) / (1299 - 700)));
         margin-top: 50px;
-        margin-bottom: 30px;
+        padding-right: 20px;
+        margin-bottom: 20px;
         margin-left: 50px;
-        margin-right: 20px;
         font-size: 35px;
         line-height: 45px;
     }
     .want_design_body_title p {
-        width: calc(570px + (1100 - 570) * ((100vw - 700px) / (1299 - 700)));
+        width: calc(570px + (1065 - 570) * ((100vw - 700px) / (1299 - 700)));
         margin-left: 50px;
-        margin-right: 20px;
-        margin-bottom: 60px;
+        margin-bottom: calc(60px + (58 - 60) * ((100vw - 700px) / (1299 - 700)));
         font-size: 20px;
         line-height: 30px;
     }
@@ -412,7 +411,7 @@
     .want_design_form .input_phone {
         margin-left: 50px;
         margin-bottom: 40px;
-        width: calc(570px + (1100 - 570) * ((100vw - 700px) / (1299 - 700)));
+        width: calc(470px + (753 - 470) * ((100vw - 700px) / (1299 - 700)));
         height: 52px;
         font-size: 20px;
         line-height: 30px;
@@ -429,13 +428,13 @@
     .error {
         font-size: 14px;
         line-height: 20px;
-        top: calc(115px + (148 - 115) * ((100vw - 700px) / (1299 - 700)));
-        right: calc(22px + (50 - 22) * ((100vw - 700px) / (1299 - 700)));
+        top: 66px;
+        right: calc(120px + (397 - 120) * ((100vw - 700px) / (1299 - 700)));
     }
     .want_design_form_button {
         margin-left: 50px;
-        width: calc(180px + (220 - 180) * ((100vw - 700px) / (1299 - 700)));
-        height: calc(52px + (60 - 52) * ((100vw - 700px) / (1299 - 700)));
+        width: 180px;
+        height: 52px;
         font-size: 20px;
         line-height: 30px;
     }
@@ -507,17 +506,14 @@
     .footer__body {
         height: 100%;
         padding-top: calc(45px + (70 - 45) * ((100vw - 700px) / (1299 - 700)));
-        max-width: 1299px;
         margin-bottom: 0;
-        flex-direction: column;
-        width: 100%;
+        width: calc(419px + (699 - 419) * ((100vw - 700px) / (1299 - 700)));
         margin-right: 0;
     }
     .footer__logo {
         display: none;
     }
     .footer__features {
-        width: 100%;
         margin-right: 0;
     }
     .footer__menu {
@@ -526,6 +522,9 @@
     .footer__lists li {
         font-size: calc(14px + (16 - 14) * ((100vw - 700px) / (1299 - 700)));
         line-height: calc(20px + (30 - 20) * ((100vw - 700px) / (1299 - 700)));
+    }
+    .footer__lists li:last-child {
+        margin-bottom: 0;
     }
     .footer__phone {
         margin-top: 0;
@@ -537,7 +536,8 @@
         margin-bottom: calc(17px + (35 - 17) * ((100vw - 700px) / (1299 - 700)));
     }
     .footer__legal {
-        width: 100%;
+        margin-top: calc(20px + (68 - 20) * ((100vw - 700px) / (1299 - 700)));
+        width: calc(419px + (699 - 419) * ((100vw - 700px) / (1299 - 700)));
     }
 }
 
