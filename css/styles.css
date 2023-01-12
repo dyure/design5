@@ -1380,6 +1380,7 @@ ul {
     color: #78777E;
     margin-bottom: 25px;
     width: calc(1220px + (1800 - 1220) * ((100vw - 1300px) / (1920 - 1300)));
+    text-align: justify;
 }
 .footer__legal.active {
     width: calc(626px + (1020 - 626) * ((100vw - 1300px) / (1920 - 1300)));

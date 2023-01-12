@@ -515,6 +515,7 @@
     }
     .footer__features {
         margin-right: 0;
+        width: calc(117px + (180 - 117) * ((100vw - 700px) / (1299 - 700)));
     }
     .footer__menu {
         margin-right: 0;
@@ -1016,5 +1017,6 @@
     }
     .footer__legal {
         width: 100%;
+        margin-top: 15px;
     }
 }
